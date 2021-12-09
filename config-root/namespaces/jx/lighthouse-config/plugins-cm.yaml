@@ -36,6 +36,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - property-xyz/data-infinispan-cache
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - property-xyz/data-outcode-stats-service
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -135,6 +139,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       property-xyz/data-hmo-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-infinispan-cache:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -321,6 +330,22 @@ data:
       - dog
       - pony
       property-xyz/data-hmo-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-infinispan-cache:
       - approve
       - assign
       - blunderbuss
@@ -625,6 +650,9 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/data-hmo-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-infinispan-cache
       trusted_org: todo
     - repos:
       - property-xyz/data-outcode-stats-service
