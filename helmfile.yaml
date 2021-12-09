@@ -5,9 +5,9 @@ helmfiles:
 - path: helmfiles/nginx/helmfile.yaml
 - path: helmfiles/secret-infra/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
+releases:
+- chart: ./charts/npmr
+  name: npmrc
+  namespace: jx
 templates: {}
 renderedvalues: {}
-releases:
-  - chart: ./charts/npmr
-    name: npmrc
-    namespace: jx
