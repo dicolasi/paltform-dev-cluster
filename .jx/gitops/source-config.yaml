@@ -1,0 +1,37 @@
+apiVersion: gitops.jenkins-x.io/v1alpha1
+kind: SourceConfig
+metadata:
+  creationTimestamp: null
+spec:
+  groups:
+  - owner: property-xyz
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: data-avm-service
+    - name: data-council-tax-service
+    - name: data-demand-stats-service
+    - name: data-epc-service
+    - name: data-export-service
+    - name: data-growth-stats-service
+    - name: data-hmo-service
+    - name: data-outcode-stats-service
+    - name: data-postcode-stats-service
+    - name: data-rdf-client
+    - name: data-seed
+    - name: data-transaction-info-service
+    - name: data-uk-national-statistics
+    - name: data-uprn-service
+    - name: data-yield-stats-service
+    - name: platform-frontend
+    - name: platform-lambda-crm-integration
+    - name: platform-lambda-mail-service
+    - name: platform-postcodes-io-db
+    - name: platform-search-service
+    - name: prod_platform-cluster
+    - name: stage_platform-cluster
+    scheduler: in-repo
+  slack:
+    channel: '#jenkins-x-pipelines'
+    kind: failureOrNextSuccess
+    pipeline: release
