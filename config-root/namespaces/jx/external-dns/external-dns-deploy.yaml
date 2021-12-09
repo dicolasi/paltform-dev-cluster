@@ -1,0 +1,106 @@
+# Source: external-dns/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: external-dns
+  namespace: jx
+  labels:
+    app.kubernetes.io/name: external-dns
+    helm.sh/chart: external-dns-5.0.0
+    app.kubernetes.io/instance: external-dns
+    app.kubernetes.io/managed-by: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'external-dns'
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: external-dns
+      app.kubernetes.io/instance: external-dns
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: external-dns
+        helm.sh/chart: external-dns-5.0.0
+        app.kubernetes.io/instance: external-dns
+        app.kubernetes.io/managed-by: Helm
+      annotations:
+        prometheus.io/port: "7979"
+        prometheus.io/scrape: "true"
+    spec:
+      securityContext:
+        fsGroup: 1001
+        runAsUser: 1001
+      affinity:
+        podAffinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - podAffinityTerm:
+                labelSelector:
+                  matchLabels:
+                    app.kubernetes.io/name: external-dns
+                    app.kubernetes.io/instance: external-dns
+                namespaces:
+                  - "jx"
+                topologyKey: kubernetes.io/hostname
+              weight: 1
+        nodeAffinity:
+      serviceAccountName: external-dns
+      containers:
+        - name: external-dns
+          image: "docker.io/bitnami/external-dns:0.8.0-debian-10-r0"
+          imagePullPolicy: "IfNotPresent"
+          args:
+            # Generic arguments
+            - --log-level=info
+            - --log-format=text
+            - --domain-filter=dev.property.xyz
+            - --zone-id-filter=c17dceb9b66f2275f088396d95f8536c
+            - --policy=upsert-only
+            - --provider=cloudflare
+            - --registry=txt
+            - --interval=1m
+            - --txt-owner-id=[dev.property.xyz]
+            - --source=ingress
+            # Cloudflare arguments
+          env:
+            # Cloudflare environment variables
+            - name: CF_API_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: cloudflare-secrets
+                  key: cloudflare_api_token
+                  optional: true
+            - name: CF_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: cloudflare-secrets
+                  key: cloudflare_api_key
+                  optional: true
+            - name: CF_API_EMAIL
+              value: "simone@property.xyz"
+          ports:
+            - name: http
+              containerPort: 7979
+          readinessProbe:
+            failureThreshold: 6
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
+          livenessProbe:
+            failureThreshold: 2
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
+          volumeMounts:
+      volumes:

@@ -12,9 +12,36 @@
   </thead>
   <tbody>
     <tr>
+		      <td colspan='4'><h3>cert-manager</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='https://github.com/jetstack/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
+	      <td>1.1.0</td>
+	      <td></td>
+	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
+	    </tr>
+    <tr>
+	      <td><a href='' title=''> <img src='' width='24px' height='24px'> ../charts/cert-manager-resources </a></td>
+	      <td></td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
+	      <td><a href='' title=''> <img src='' width='24px' height='24px'> ../charts/external-dns-resources </a></td>
+	      <td>1.0.0</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
+	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns' title='ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.'> <img src='https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png' width='24px' height='24px'> external-dns </a></td>
+	      <td>5.0.0</td>
+	      <td></td>
+	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns'>source</a></td>
+	    </tr>
+    <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
 	      <td>1.1.8</td>
 	      <td></td>
@@ -39,22 +66,22 @@
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
     <tr>
-	      <td><a href='https://github.com/jenkins-x-charts/nexus' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/jenkins-x-platform/images/nexus.png' width='24px' height='24px'> nexus </a></td>
-	      <td>0.1.41</td>
+	      <td><a href='' title='A Helm chart for bucketrepo service'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> bucketrepo </a></td>
+	      <td>0.1.67</td>
 	      <td></td>
-	      <td><a href='https://github.com/jenkins-x-charts/nexus'>source</a></td>
-	    </tr>
-    <tr>
-	      <td><a href='https://github.com/helm/chartmuseum' title='DEPRECATED Host your own Helm Chart Repository'> <img src='https://raw.githubusercontent.com/helm/chartmuseum/master/logo2.png' width='24px' height='24px'> chartmuseum </a></td>
-	      <td>2.14.2</td>
 	      <td></td>
-	      <td><a href='https://github.com/helm/chartmuseum'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
 	      <td>0.3.9</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
+	    </tr>
+    <tr>
+	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin' title='Web UI for Lighthouse, to visualize events, jobs, and merge status/history.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse-webui-plugin </a></td>
+	      <td>0.1.7</td>
+	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'>source</a></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>nginx</h3></td>
