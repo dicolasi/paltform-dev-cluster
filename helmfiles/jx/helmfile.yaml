@@ -16,7 +16,7 @@ releases:
   version: 0.0.64
   name: jx-slack
   values:
-    - jx-values.yaml
+  - jx-values.yaml
 - chart: ../../charts/external-dns-resources
   version: 1.0.0
   name: external-dns-resources

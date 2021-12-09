@@ -1,0 +1,13 @@
+# Source: jx-slack/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jx-slack
+  labels:
+    app: jx-slack
+    release: jx-slack
+    heritage: Helm
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'jx-slack'
+  namespace: jx
