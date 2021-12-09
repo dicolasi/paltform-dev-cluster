@@ -14,7 +14,7 @@ spec:
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    provider: aks
+    provider: k8n
     registry: xyzdevcluster.azurecr.io
   environments:
   - key: dev
