@@ -10,10 +10,10 @@ spec:
       storage:
         storageAccountName: jxxyzdevcluster
     chartRepository: https://bucketrepo.dev.property.xyz/bucketrepo/charts
-    environmentGitOwner: property-xyz
     devEnvApprovers:
-      - dicolasi
-      - kannan1
+    - dicolasi
+    - kannan1
+    environmentGitOwner: property-xyz
     gitKind: github
     gitName: github
     gitServer: https://github.com

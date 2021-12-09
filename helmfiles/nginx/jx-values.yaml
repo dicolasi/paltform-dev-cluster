@@ -24,7 +24,10 @@ jxRequirements:
     azure:
       storage:
         storageAccountName: jxxyzdevcluster
-    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    chartRepository: https://bucketrepo.dev.property.xyz/bucketrepo/charts
+    devEnvApprovers:
+    - dicolasi
+    - kannan1
     environmentGitOwner: property-xyz
     gitKind: github
     gitName: github
@@ -48,7 +51,7 @@ jxRequirements:
       production: true
   pipelineUser:
     username: property-xyz-bot
-  repository: nexus
+  repository: bucketrepo
   secretStorage: vault
   storage:
   - name: logs
