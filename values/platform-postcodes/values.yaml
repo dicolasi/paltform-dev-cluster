@@ -1,0 +1,11 @@
+api:
+  deploy: "false"
+database:
+  replicaCount: 1
+  resources:
+    limits:
+      cpu: 800m
+      memory: 2Gi
+    requests:
+      cpu: 500m
+      memory: 1Gi

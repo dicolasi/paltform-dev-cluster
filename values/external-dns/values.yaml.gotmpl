@@ -1,0 +1,20 @@
+sources:
+  - ingress
+provider: cloudflare
+cloudflare:
+  secretName: cloudflare-secrets
+  email: simone@property.xyz
+  proxied: false
+domainFilters:
+  - {{ .Values.jxRequirements.ingress.domain }}
+zoneIdFilters:
+  - c17dceb9b66f2275f088396d95f8536c
+txtOwnerId:
+  - {{ .Values.jxRequirements.ingress.domain }}
+rbac:
+  create: true
+metrics:
+  enabled: true
+  podAnnotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "7979"

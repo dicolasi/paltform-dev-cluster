@@ -18,6 +18,7 @@ releases:
   name: external-dns
   values:
   - ../../versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
+  - ../../values/external-dns/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jxboot-helmfile-resources
   version: 1.1.8
@@ -48,23 +49,23 @@ releases:
   values:
   - ../../versionStream/charts/jxgh/lighthouse/values.yaml.gotmpl
   - jx-values.yaml
-- chart: jxgh/nexus
-  version: 0.1.41
-  name: nexus
+- chart: jxgh/bucketrepo
+  version: 0.1.67
+  name: bucketrepo
   values:
-  - ../../versionStream/charts/jxgh/nexus/values.yaml.gotmpl
-  - jx-values.yaml
-- chart: stable/chartmuseum
-  version: 2.14.2
-  name: chartmuseum
-  values:
-  - ../../versionStream/charts/stable/chartmuseum/values.yaml.gotmpl
+  - ../../versionStream/charts/jxgh/bucketrepo/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jx-build-controller
   version: 0.3.9
   name: jx-build-controller
   values:
   - ../../versionStream/charts/jxgh/jx-build-controller/values.yaml.gotmpl
+  - jx-values.yaml
+- chart: jxgh/lighthouse-webui-plugin
+  version: 0.1.7
+  name: lighthouse-webui-plugin
+  values:
+  - ../../versionStream/charts/jxgh/lighthouse-webui-plugin/values.yaml.gotmpl
   - jx-values.yaml
 templates: {}
 renderedvalues: {}
