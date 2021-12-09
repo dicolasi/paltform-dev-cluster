@@ -9,8 +9,11 @@ spec:
     azure:
       storage:
         storageAccountName: jxxyzdevcluster
-    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    chartRepository: https://bucketrepo.dev.property.xyz/bucketrepo/charts
     environmentGitOwner: property-xyz
+    devEnvApprovers:
+      - dicolasi
+      - kannan1
     gitKind: github
     gitName: github
     gitServer: https://github.com
