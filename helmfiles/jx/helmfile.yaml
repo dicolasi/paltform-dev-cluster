@@ -22,7 +22,6 @@ releases:
   condition: jxRequirementsIngressExternalDNS.enabled
   name: external-dns
   values:
-  - ../../versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
   - ../../values/external-dns/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jxboot-helmfile-resources
