@@ -6,6 +6,98 @@ data:
       repos:
       - property-xyz/dev_platform-cluster-azure
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-avm-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-council-tax-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-demand-stats-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-epc-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-export-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-growth-stats-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-hmo-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-infinispan-cache
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-outcode-stats-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-postcode-stats-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-rdf-client
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-seed
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-transaction-info-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-uk-national-statistics
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-uprn-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/data-yield-stats-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/platform-frontend
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/platform-lambda-crm-integration
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/platform-lambda-mail-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/platform-postcodes-io-db
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/platform-search-service
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/prod_platform-cluster
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - property-xyz/stage_platform-cluster
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -16,7 +108,122 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      property-xyz/data-avm-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-council-tax-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-demand-stats-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-epc-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-export-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-growth-stats-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-hmo-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-infinispan-cache:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-outcode-stats-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-postcode-stats-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-rdf-client:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-seed:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-transaction-info-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-uk-national-statistics:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-uprn-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-yield-stats-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       property-xyz/dev_platform-cluster-azure:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/platform-frontend:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/platform-lambda-crm-integration:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/platform-lambda-mail-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/platform-postcodes-io-db:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/platform-search-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/prod_platform-cluster:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/stage_platform-cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -26,8 +233,376 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      property-xyz/data-avm-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-council-tax-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-demand-stats-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-epc-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-export-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-growth-stats-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-hmo-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-infinispan-cache:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-outcode-stats-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-postcode-stats-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-rdf-client:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-seed:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-transaction-info-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-uk-national-statistics:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-uprn-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-yield-stats-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       property-xyz/dev_platform-cluster-azure:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/platform-frontend:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/platform-lambda-crm-integration:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/platform-lambda-mail-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/platform-postcodes-io-db:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/platform-search-service:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/prod_platform-cluster:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/stage_platform-cluster:
       - approve
       - assign
       - blunderbuss
@@ -55,6 +630,77 @@ data:
     - repos:
       - property-xyz/dev_platform-cluster-azure
       trusted_org: todo
+    - repos:
+      - property-xyz/data-avm-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-council-tax-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-demand-stats-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-epc-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-export-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-growth-stats-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-hmo-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-infinispan-cache
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-outcode-stats-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-postcode-stats-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-rdf-client
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-seed
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-transaction-info-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-uk-national-statistics
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-uprn-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-yield-stats-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/platform-frontend
+      trusted_org: todo
+    - repos:
+      - property-xyz/platform-lambda-crm-integration
+      trusted_org: todo
+    - repos:
+      - property-xyz/platform-lambda-mail-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/platform-postcodes-io-db
+      trusted_org: todo
+    - repos:
+      - property-xyz/platform-search-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/prod_platform-cluster
+      trusted_org: todo
+    - repos:
+      - property-xyz/stage_platform-cluster
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
