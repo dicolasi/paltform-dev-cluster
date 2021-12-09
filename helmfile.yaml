@@ -7,3 +7,7 @@ helmfiles:
 - path: helmfiles/tekton-pipelines/helmfile.yaml
 templates: {}
 renderedvalues: {}
+releases:
+  - chart: ./charts/npmr
+    name: npmrc
+    namespace: jx
