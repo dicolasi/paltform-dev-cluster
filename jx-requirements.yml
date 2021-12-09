@@ -2,8 +2,9 @@ apiVersion: core.jenkins-x.io/v4beta1
 kind: Requirements
 spec:
   autoUpdate:
-    enabled: false
-    schedule: ""
+    autoMerge: true
+    enabled: true
+    schedule: 0 0 * * *
   cluster:
     azure:
       storage:
@@ -22,13 +23,14 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: dev.property.xyz
+    externalDNS: true
     kind: ingress
-    namespaceSubDomain: -jx.
+    namespaceSubDomain: .
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: security@property.xyz
+      enabled: true
+      production: true
   pipelineUser:
     username: property-xyz-bot
   repository: nexus
