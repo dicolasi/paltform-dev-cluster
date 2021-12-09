@@ -12,6 +12,11 @@ repositories:
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
 releases:
+- chart: jxgh/jx-slack
+  version: 0.0.64
+  name: jx-slack
+  values:
+    - jx-values.yaml
 - chart: ../../charts/external-dns-resources
   version: 1.0.0
   name: external-dns-resources
