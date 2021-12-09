@@ -33,7 +33,7 @@ spec:
       production: true
   pipelineUser:
     username: property-xyz-bot
-  repository: nexus
+  repository: bucketrepo
   secretStorage: vault
   storage:
   - name: logs
