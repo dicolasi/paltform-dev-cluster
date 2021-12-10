@@ -24,7 +24,8 @@ jxRequirements:
     azure:
       storage:
         storageAccountName: jxxyzdevcluster
-    chartRepository: https://bucketrepo.dev.property.xyz/bucketrepo/charts
+    chartKind: pages
+    chartRepository: https://github.com/property-xyz/property-xyz.github.io.git
     devEnvApprovers:
     - dicolasi
     - kannan1

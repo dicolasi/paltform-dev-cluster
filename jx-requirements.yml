@@ -9,8 +9,8 @@ spec:
     azure:
       storage:
         storageAccountName: jxxyzdevcluster
-    chartRepository: https://github.com/property-xyz/property-xyz.github.io.git
     chartKind: pages
+    chartRepository: https://github.com/property-xyz/property-xyz.github.io.git
     devEnvApprovers:
     - dicolasi
     - kannan1
