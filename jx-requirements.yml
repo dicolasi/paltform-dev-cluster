@@ -18,7 +18,7 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: aks
-    registry: xyzdevcluster.azurecr.io
+    registry: docker.io
   environments:
   - key: dev
     owner: property-xyz
