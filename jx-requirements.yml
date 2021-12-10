@@ -17,7 +17,7 @@ spec:
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    provider: aks
+    provider: k8n
     registry: docker.io
   environments:
   - key: dev
