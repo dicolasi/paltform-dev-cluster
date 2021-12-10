@@ -1,0 +1,10 @@
+# Source: platform-frontend/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: platform-frontend-platform-frontend
+  annotations:
+    meta.helm.sh/release-name: 'platform-frontend'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
