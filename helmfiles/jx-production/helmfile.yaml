@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: https://bucketrepo.dev.property.xyz/bucketrepo/charts
+releases:
+- chart: dev/platform-frontend
+  version: 1.72.18
+  name: platform-frontend
+templates: {}
+renderedvalues: {}
