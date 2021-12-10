@@ -9,7 +9,8 @@ spec:
     azure:
       storage:
         storageAccountName: jxxyzdevcluster
-    chartRepository: https://bucketrepo.dev.property.xyz/bucketrepo/charts
+    chartRepository: https://github.com/property-xyz/property-xyz.github.io.git
+    chartKind: pages
     devEnvApprovers:
     - dicolasi
     - kannan1
