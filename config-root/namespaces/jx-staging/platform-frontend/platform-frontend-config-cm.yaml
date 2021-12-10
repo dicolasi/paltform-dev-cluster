@@ -1,0 +1,16 @@
+# Source: platform-frontend/templates/configs.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: platform-frontend-config
+  annotations:
+    meta.helm.sh/release-name: 'platform-frontend'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+data:
+  XYZ_GOOGLE_TAG_MANAGER_ENV:
+  POSTCODES_API_HOST:
+  OS_MAPS_SERVICE_URL:
+  FLAGSMITH_ENV_ID:
+  HASURA_URL:

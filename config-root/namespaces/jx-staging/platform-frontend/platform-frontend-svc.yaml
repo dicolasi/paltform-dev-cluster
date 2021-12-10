@@ -1,0 +1,20 @@
+# Source: platform-frontend/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: platform-frontend
+  labels:
+    chart: "platform-frontend-1.72.18"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'platform-frontend'
+  namespace: jx-staging
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
+      name: http
+  selector:
+    app: platform-frontend-platform-frontend

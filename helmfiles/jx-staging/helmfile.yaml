@@ -1,4 +1,8 @@
 filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
 namespace: jx-staging
 repositories:
 - name: dev
@@ -7,5 +11,7 @@ releases:
 - chart: dev/platform-frontend
   version: 1.72.18
   name: platform-frontend
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}

@@ -1,0 +1,64 @@
+# Source: platform-frontend/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: platform-frontend-platform-frontend
+  labels:
+    draft: draft-app
+    chart: "platform-frontend-1.72.18"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'platform-frontend'
+    wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx-staging
+spec:
+  selector:
+    matchLabels:
+      app: platform-frontend-platform-frontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: platform-frontend-platform-frontend
+    spec:
+      serviceAccountName: platform-frontend-platform-frontend
+      containers:
+        - name: platform-frontend
+          image: "docker.io/property-xyz/platform-frontend:1.72.18"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: VERSION
+              value: 1.72.18
+          envFrom:
+            - configMapRef:
+                name: platform-frontend-config
+            - secretRef:
+                name: platform-frontend-secrets
+          ports:
+            - name: http
+              containerPort: 3000
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 256Mi
+            requests:
+              cpu: 200m
+              memory: 128Mi
+      terminationGracePeriodSeconds:
+      'imagePullSecrets:':
