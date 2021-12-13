@@ -56,8 +56,6 @@ spec:
               value: ""
             - name: GIT_SECRET_MOUNT_PATH
               value: /secrets/git
-            - name: AZURE_STORAGE_ACCOUNT
-              value: jxxyzdevcluster
             - name: GIT_AUTHOR_EMAIL
               value: jenkins-x@googlegroups.com
             - name: GIT_AUTHOR_NAME

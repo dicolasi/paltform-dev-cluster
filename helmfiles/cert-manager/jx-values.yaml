@@ -33,7 +33,7 @@ jxRequirements:
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    provider: aks
+    provider: k8s
     registry: ghcr.io
   environments:
   - key: dev

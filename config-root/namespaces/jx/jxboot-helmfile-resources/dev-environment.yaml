@@ -28,7 +28,7 @@ spec:
     dockerRegistryOrg: ""
     envOrganisation: property-xyz
     gitServer: https://github.com
-    kubeProvider: "aks"
+    kubeProvider: "k8s"
     pipelineUsername: "property-xyz-bot"
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
