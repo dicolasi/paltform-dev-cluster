@@ -1,14 +1,20 @@
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
-  name: letsencrypt-prod
+  name: zerossl-prod
 spec:
   acme:
-    server: https://acme-v02.api.letsencrypt.org/directory
-    email: "{{ .Values.jxRequirements.ingress.tls.email }}"
+# The ACME server URL
+    server: https://acme.zerossl.com/v2/DV90
+    externalAccountBinding:
+      keyID: 84rHaBv91-61-AmxptQtVw
+      keySecretRef:
+        name: zerossl-secrets
+        key: eab_hmac_key
+      keyAlgorithm: HS256
     # Name of a secret used to store the ACME account private key
     privateKeySecretRef:
-      name: letsencrypt-prod
+      name: zerossl-prod
     solvers:
       # ACME DNS-01 provider configurations
     - dns01:
