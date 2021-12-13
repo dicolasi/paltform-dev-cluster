@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - property-xyz/stage_platform-cluster
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - property-xyz/data-avm-service
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -604,6 +608,9 @@ data:
     triggers:
     - repos:
       - property-xyz/dev_platform-cluster-azure
+      trusted_org: todo
+    - repos:
+      - property-xyz/stage_platform-cluster
       trusted_org: todo
     - repos:
       - property-xyz/data-avm-service

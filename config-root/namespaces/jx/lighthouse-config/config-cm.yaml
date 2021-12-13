@@ -75,6 +75,7 @@ data:
         - needs-rebase
         repos:
         - property-xyz/dev_platform-cluster-azure
+        - property-xyz/stage_platform-cluster
         - property-xyz/data-avm-service
         - property-xyz/data-council-tax-service
         - property-xyz/data-demand-stats-service
@@ -96,7 +97,6 @@ data:
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
         - property-xyz/prod_platform-cluster
-        - property-xyz/stage_platform-cluster
       - labels:
         - updatebot
         missingLabels:
@@ -107,6 +107,7 @@ data:
         - needs-rebase
         repos:
         - property-xyz/dev_platform-cluster-azure
+        - property-xyz/stage_platform-cluster
         - property-xyz/data-avm-service
         - property-xyz/data-council-tax-service
         - property-xyz/data-demand-stats-service
@@ -128,7 +129,6 @@ data:
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
         - property-xyz/prod_platform-cluster
-        - property-xyz/stage_platform-cluster
       target_url: http://lighthouse.dev.property.xyz/merge/status
 kind: ConfigMap
 metadata:
