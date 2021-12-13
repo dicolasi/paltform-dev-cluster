@@ -17,7 +17,6 @@ spec:
     - name: data-hmo-service
     - name: data-infinispan-cache
     - name: data-outcode-stats-service
-    - name: data-postcode-stats-service
     - name: data-rdf-client
     - name: data-seed
     - name: data-transaction-info-service
