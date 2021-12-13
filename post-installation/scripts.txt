@@ -7,3 +7,10 @@ k annotate secret tls-dev-property-xyz-p kubed.appscode.com/sync="" -n cert-mana
 -----
 
 ./medusa import  secret --address="https://0.0.0.0:8200" --token="<TOKEN>"  dev-secrets.yaml --insecure
+
+---
+
+kubectl create secret generic container-registry-auth  \
+  --from-literal=url=https://ghcr.io \
+  --from-literal=username=property-xyz-bot \
+  --from-literal=password=<TOKEN>
