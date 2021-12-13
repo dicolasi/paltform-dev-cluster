@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/data-council-tax-service
+  version: 0.1.13
+  name: data-council-tax-service
+templates: {}
+renderedvalues: {}
