@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/data-uk-national-statistics
+  version: 0.2.6
+  name: data-uk-national-statistics
+templates: {}
+renderedvalues: {}
