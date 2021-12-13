@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/platform-search-service
+  version: 0.13.1
+  name: platform-search-service
+templates: {}
+renderedvalues: {}
