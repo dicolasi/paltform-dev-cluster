@@ -16,7 +16,6 @@ data:
         property-xyz/data-hmo-service: true
         property-xyz/data-infinispan-cache: true
         property-xyz/data-outcode-stats-service: true
-        property-xyz/data-postcode-stats-service: true
         property-xyz/data-rdf-client: true
         property-xyz/data-seed: true
         property-xyz/data-transaction-info-service: true
@@ -51,7 +50,6 @@ data:
         property-xyz/data-hmo-service: merge
         property-xyz/data-infinispan-cache: merge
         property-xyz/data-outcode-stats-service: merge
-        property-xyz/data-postcode-stats-service: merge
         property-xyz/data-rdf-client: merge
         property-xyz/data-seed: merge
         property-xyz/data-transaction-info-service: merge
@@ -86,7 +84,6 @@ data:
         - property-xyz/data-hmo-service
         - property-xyz/data-infinispan-cache
         - property-xyz/data-outcode-stats-service
-        - property-xyz/data-postcode-stats-service
         - property-xyz/data-rdf-client
         - property-xyz/data-seed
         - property-xyz/data-transaction-info-service
@@ -119,7 +116,6 @@ data:
         - property-xyz/data-hmo-service
         - property-xyz/data-infinispan-cache
         - property-xyz/data-outcode-stats-service
-        - property-xyz/data-postcode-stats-service
         - property-xyz/data-rdf-client
         - property-xyz/data-seed
         - property-xyz/data-transaction-info-service
