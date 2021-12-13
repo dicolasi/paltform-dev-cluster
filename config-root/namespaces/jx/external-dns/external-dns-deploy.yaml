@@ -58,7 +58,7 @@ spec:
             - --log-format=text
             - --domain-filter=dev.property.xyz
             - --zone-id-filter=c17dceb9b66f2275f088396d95f8536c
-            - --policy=upsert-only
+            - --policy=sync
             - --provider=cloudflare
             - --registry=txt
             - --interval=1m
