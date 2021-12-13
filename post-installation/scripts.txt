@@ -1,0 +1,9 @@
+helm install kubed appscode/kubed \
+  --version v0.12.0 \
+  --namespace kube-system
+
+k annotate secret tls-dev-property-xyz-p kubed.appscode.com/sync="" -n cert-manager
+
+-----
+
+./medusa import  secret --address="https://0.0.0.0:8200" --token="<TOKEN>"  dev-secrets.yaml --insecure
