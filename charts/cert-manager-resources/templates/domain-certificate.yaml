@@ -7,7 +7,7 @@ metadata:
 spec:
   secretName: "tls-{{ .Values.jxRequirements.ingress.domain | replace "." "-" }}-p"
   issuerRef:
-    name: letsencrypt-prod
+    name: zerossl-prod
     kind: ClusterIssuer
   commonName: "*.{{ .Values.jxRequirements.ingress.domain }}"
   dnsNames:
