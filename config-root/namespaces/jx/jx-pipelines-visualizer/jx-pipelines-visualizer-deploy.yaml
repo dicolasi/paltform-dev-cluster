@@ -48,6 +48,13 @@ spec:
             - http://grafana.dev.property.xyz/explore?left=%5B%22now%22,%22now%22,%22Tempo%22,%7B%22query%22:%22{{.TraceID}}%22%7D%5D
             - -log-level
             - INFO
+          env:
+            - name: XDG_CONFIG_HOME
+              value: /home/jenkins
+            - name: GIT_SECRET_MOUNT_PATH
+              value: /secrets/git
+            - name: AZURE_STORAGE_ACCOUNT
+              value: "jxxyzdevcluster"
           ports:
             - name: http
               containerPort: 8080
