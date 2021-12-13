@@ -41,6 +41,13 @@ jxRequirements:
     repository: dev_platform-cluster-azure
   - key: staging
   - key: production
+  - gitKind: github
+    gitServer: https://github.com
+    key: stage-platform-cluster
+    owner: property-xyz
+    promotionStrategy: Never
+    remoteCluster: true
+    repository: stage_platform-cluster
   ingress:
     domain: dev.property.xyz
     externalDNS: true
