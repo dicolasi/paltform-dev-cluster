@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/data-export-service
+  version: 0.13.13
+  name: data-export-service
+templates: {}
+renderedvalues: {}
