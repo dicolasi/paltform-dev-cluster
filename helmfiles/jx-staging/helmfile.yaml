@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/data-transaction-info-service
+  version: 0.13.15
+  name: data-transaction-info-service
+templates: {}
+renderedvalues: {}
