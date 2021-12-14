@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/data-growth-stats-service
+  version: 0.16.42
+  name: data-growth-stats-service
+templates: {}
+renderedvalues: {}
