@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/platform-postcodes-io-db
+  version: 0.1.3
+  name: platform-postcodes-io-db
+templates: {}
+renderedvalues: {}
