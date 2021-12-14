@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/platform-lambda-crm-integration
+  version: 0.0.24
+  name: platform-lambda-crm-integration
+templates: {}
+renderedvalues: {}
