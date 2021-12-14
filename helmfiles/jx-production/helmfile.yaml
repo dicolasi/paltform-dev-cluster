@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-production
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/platform-frontend
+  version: 1.72.26
+  name: platform-frontend
+templates: {}
+renderedvalues: {}
