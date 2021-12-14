@@ -1,0 +1,11 @@
+filepath: ""
+namespace: jx-staging
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/property-xyz.github.io/
+releases:
+- chart: dev/data-demand-stats-service
+  version: 0.12.37
+  name: data-demand-stats-service
+templates: {}
+renderedvalues: {}
