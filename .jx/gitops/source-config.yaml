@@ -13,6 +13,7 @@ spec:
     - name: data-demand-stats-service
     - name: data-epc-service
     - name: data-export-service
+    - name: data-export-service
     - name: data-growth-stats-service
     - name: data-hmo-service
     - name: data-infinispan-cache
