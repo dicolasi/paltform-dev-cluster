@@ -10,7 +10,7 @@ spec:
       storage:
         storageAccountName: jxxyzdevcluster
     chartKind: pages
-    chartRepository: https://github.com/property-xyz/property-xyz.github.io
+    chartRepository:  https://property-xyz.github.io/platform-helm-charts
     devEnvApprovers:
     - dicolasi
     - kannan1
