@@ -117,15 +117,15 @@
     version: 0.0.192
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
-    firstDeployed: "2021-12-17T12:27:04Z"
+    firstDeployed: "2021-12-18T12:22:07Z"
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-12-17T12:27:04Z"
+    lastDeployed: "2021-12-18T12:22:07Z"
     name: lighthouse
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 1.4.0
+    version: 1.5.2
   - apiVersion: v1
     appVersion: 0.1.67
     description: A Helm chart for bucketrepo service
