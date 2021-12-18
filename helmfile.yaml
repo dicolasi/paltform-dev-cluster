@@ -5,6 +5,7 @@ helmfiles:
 - path: helmfiles/nginx/helmfile.yaml
 - path: helmfiles/secret-infra/helmfile.yaml
 - path: helmfiles/tekton-pipelines/helmfile.yaml
+- path: helmfiles/jx-dev/helmfile.yaml
 releases:
 - chart: ./charts/npmr
   name: npmrc
