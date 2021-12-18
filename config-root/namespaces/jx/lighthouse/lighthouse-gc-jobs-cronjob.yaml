@@ -16,6 +16,7 @@ spec:
     metadata:
       creationTimestamp: null
     spec:
+      backoffLimit: 6
       template:
         metadata:
           creationTimestamp: null
@@ -26,7 +27,7 @@ spec:
           containers:
             - command:
                 - /home/jx/gc-jobs
-              image: ghcr.io/jenkins-x/lighthouse-gc-jobs:1.4.0
+              image: ghcr.io/jenkins-x/lighthouse-gc-jobs:1.5.2
               imagePullPolicy: IfNotPresent
               args:
                 - "--namespace=jx"
