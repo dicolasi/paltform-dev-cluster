@@ -25,7 +25,7 @@ jxRequirements:
       storage:
         storageAccountName: jxxyzdevcluster
     chartKind: pages
-    chartRepository: https://property-xyz.github.io/platform-helm-charts
+    chartRepository: https://github.com/property-xyz/platform-helm-charts.git
     devEnvApprovers:
     - dicolasi
     - kannan1
