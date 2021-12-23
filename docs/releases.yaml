@@ -48,7 +48,7 @@
   - annotations:
       category: DeveloperTools
     apiVersion: v2
-    appVersion: 0.8.0
+    appVersion: 0.10.2
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -57,14 +57,14 @@
       version: 1.x.x
     description: ExternalDNS is a Kubernetes addon that configures public DNS servers
       with information about exposed Kubernetes services to make them discoverable.
-    firstDeployed: "2021-12-09T12:05:13Z"
+    firstDeployed: "2021-12-23T05:43:31Z"
     home: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
     icon: https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png
     keywords:
     - external-dns
     - network
     - dns
-    lastDeployed: "2021-12-09T12:05:13Z"
+    lastDeployed: "2021-12-23T05:43:31Z"
     maintainers:
     - email: containers@bitnami.com
       name: Bitnami
@@ -76,19 +76,19 @@
     - https://github.com/kubernetes-sigs/external-dns
     - https://github.com/bitnami/bitnami-docker-external-dns
     - https://github.com/kubernetes-sigs/external-dns
-    version: 5.0.0
+    version: 6.0.2
   - apiVersion: v1
-    appVersion: 1.1.12
+    appVersion: 1.1.14
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2021-12-13T09:54:06Z"
+    firstDeployed: "2021-12-23T05:43:43Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-12-13T09:54:06Z"
+    lastDeployed: "2021-12-23T05:43:43Z"
     name: jxboot-helmfile-resources
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.1.12
+    version: 1.1.14
   - apiVersion: v1
     appVersion: 1.7.5
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
@@ -249,3 +249,25 @@
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
     version: 0.27.2
+- namespace: jx-dev
+  path: helmfiles/jx-dev/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    appVersion: 0.1.3
+    description: UK Postcode API serving up Open Data
+    firstDeployed: "2021-12-23T05:44:03Z"
+    home: https://postcodes.io
+    keywords:
+    - postcodes
+    - data
+    - geolocations
+    - http
+    - API
+    lastDeployed: "2021-12-23T05:44:03Z"
+    name: platform-postcodes-io-db
+    repositoryName: dev
+    repositoryUrl: https://property-xyz.github.io/platform-helm-charts
+    resourcePath: config-root/namespaces/jx-dev/platform-postcodes-io-db
+    sources:
+    - https://github.com/ideal-postcodes/postcodes.io
+    version: 0.1.3

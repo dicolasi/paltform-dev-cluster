@@ -43,13 +43,13 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns' title='ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.'> <img src='https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png' width='24px' height='24px'> external-dns </a></td>
-	      <td>5.0.0</td>
+	      <td>6.0.2</td>
 	      <td></td>
 	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
-	      <td>1.1.12</td>
+	      <td>1.1.14</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
@@ -121,6 +121,15 @@
 	      <td>0.27.2</td>
 	      <td></td>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart'>source</a></td>
+	    </tr>
+    <tr>
+		      <td colspan='4'><h3>jx-dev</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='https://postcodes.io' title='UK Postcode API serving up Open Data'> <img src='' width='24px' height='24px'> platform-postcodes-io-db </a></td>
+	      <td>0.1.3</td>
+	      <td></td>
+	      <td><a href='https://postcodes.io'>source</a></td>
 	    </tr>
 
   </tbody>
