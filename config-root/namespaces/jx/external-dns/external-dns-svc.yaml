@@ -6,7 +6,7 @@ metadata:
   namespace: jx
   labels:
     app.kubernetes.io/name: external-dns
-    helm.sh/chart: external-dns-5.0.0
+    helm.sh/chart: external-dns-6.0.2
     app.kubernetes.io/instance: external-dns
     app.kubernetes.io/managed-by: Helm
     gitops.jenkins-x.io/pipeline: 'namespaces'
