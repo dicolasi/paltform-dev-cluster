@@ -1,4 +1,3 @@
 config:
   storage:
-    enabled: true
     bucketUrl: azblob://repo
