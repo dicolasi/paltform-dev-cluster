@@ -54,6 +54,8 @@ spec:
   storage:
   - name: logs
     url: azblob://logs
+  - name: repository
+    url: azblob://repo
   terraformVault: true
   vault: {}
   webhook: lighthouse
