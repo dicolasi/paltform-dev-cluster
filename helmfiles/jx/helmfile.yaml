@@ -63,9 +63,9 @@ releases:
   version: 0.1.67
   name: bucketrepo
   values:
-    - ../../versionStream/charts/jxgh/bucketrepo/values.yaml.gotmpl
-    - ../../values/bucketrepo/values.yaml
-    - jx-values.yaml
+  - ../../versionStream/charts/jxgh/bucketrepo/values.yaml.gotmpl
+  - ../../values/bucketrepo/values.yaml
+  - jx-values.yaml
 - chart: jxgh/jx-build-controller
   version: 0.3.9
   name: jx-build-controller
