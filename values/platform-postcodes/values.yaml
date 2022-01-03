@@ -1,5 +1,5 @@
 api:
-  deploy: "false"
+  deploy: false
 database:
   replicaCount: 1
   resources:
