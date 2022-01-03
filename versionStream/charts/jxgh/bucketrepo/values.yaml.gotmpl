@@ -1,5 +1,7 @@
+{{- if and (hasKey .Values.jxRequirements.cluster "region") (eq .Values.jxRequirements.cluster.provider "eks") }}
 env:
-   AZURE_STORAGE_ACCOUNT: {{ .Values.jxRequirements.cluster.azure.storage.storageAccountName }}
+  AWS_REGION: {{ .Values.jxRequirements.cluster.region }}
+{{- end }}
 
 serviceaccount:
   annotations:
