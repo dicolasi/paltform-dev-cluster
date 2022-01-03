@@ -1,3 +1,4 @@
-storage:
-  enabled: true
-  bucket_url: azblob://repo
+config:
+  storage:
+    enabled: true
+    bucket_url: azblob://repo
