@@ -33,6 +33,8 @@ spec:
             - "-config-path=/config"
             - "-log-level=info"
           env:
+            - name: AZURE_STORAGE_ACCOUNT
+              value: "jxxyzdevcluster"
           ports:
             - containerPort: 8080
           livenessProbe:
