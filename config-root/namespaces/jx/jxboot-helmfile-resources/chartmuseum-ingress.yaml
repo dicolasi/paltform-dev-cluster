@@ -1,11 +1,11 @@
-# Source: jxboot-helmfile-resources/templates/700-bucketrepo-ing.yaml
+# Source: jxboot-helmfile-resources/templates/700-chartmuseum-ing.yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
     meta.helm.sh/release-name: 'jxboot-helmfile-resources'
-  name: bucketrepo
+  name: chartmuseum
   namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -16,11 +16,11 @@ spec:
           - pathType: ImplementationSpecific
             backend:
               service:
-                name: bucketrepo
+                name: jenkins-x-chartmuseum
                 port:
-                  number: 80
-      host: bucketrepo.dev.property.xyz
+                  number: 8080
+      host: chartmuseum.dev.property.xyz
   tls:
     - hosts:
-        - bucketrepo.dev.property.xyz
+        - chartmuseum.dev.property.xyz
       secretName: "tls-dev-property-xyz-p"

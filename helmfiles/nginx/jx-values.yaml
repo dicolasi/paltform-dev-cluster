@@ -64,7 +64,10 @@ jxRequirements:
       production: true
   pipelineUser:
     username: property-xyz-bot
-  repository: bucketrepo
+  repositories:
+    maven:
+      releaseUrl: https://maven.pkg.github.com/property-xyz/platform-maven-repo/
+  repository: github
   secretStorage: vault
   storage:
   - name: logs
