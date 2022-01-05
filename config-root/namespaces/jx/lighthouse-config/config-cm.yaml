@@ -15,6 +15,7 @@ data:
         property-xyz/data-growth-stats-service: true
         property-xyz/data-hmo-service: true
         property-xyz/data-infinispan-cache: true
+        property-xyz/data-landregistry-sparql-client: true
         property-xyz/data-outcode-stats-service: true
         property-xyz/data-rdf-client: true
         property-xyz/data-seed: true
@@ -49,6 +50,7 @@ data:
         property-xyz/data-growth-stats-service: merge
         property-xyz/data-hmo-service: merge
         property-xyz/data-infinispan-cache: merge
+        property-xyz/data-landregistry-sparql-client: merge
         property-xyz/data-outcode-stats-service: merge
         property-xyz/data-rdf-client: merge
         property-xyz/data-seed: merge
@@ -85,6 +87,7 @@ data:
         - property-xyz/data-growth-stats-service
         - property-xyz/data-hmo-service
         - property-xyz/data-infinispan-cache
+        - property-xyz/data-landregistry-sparql-client
         - property-xyz/data-outcode-stats-service
         - property-xyz/data-rdf-client
         - property-xyz/data-seed
@@ -117,6 +120,7 @@ data:
         - property-xyz/data-growth-stats-service
         - property-xyz/data-hmo-service
         - property-xyz/data-infinispan-cache
+        - property-xyz/data-landregistry-sparql-client
         - property-xyz/data-outcode-stats-service
         - property-xyz/data-rdf-client
         - property-xyz/data-seed
