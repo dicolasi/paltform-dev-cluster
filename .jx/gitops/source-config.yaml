@@ -17,6 +17,7 @@ spec:
     - name: data-growth-stats-service
     - name: data-hmo-service
     - name: data-infinispan-cache
+    - name: data-landregistry-sparql-client
     - name: data-outcode-stats-service
     - name: data-rdf-client
     - name: data-seed
