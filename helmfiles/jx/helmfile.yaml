@@ -60,10 +60,11 @@ releases:
   - ../../versionStream/charts/jxgh/lighthouse/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/nexus
+  version: 0.1.41
   name: nexus
   values:
-    - ../../versionStream/charts/jxgh/nexus/values.yaml.gotmpl
-    - jx-values.yaml
+  - ../../versionStream/charts/jxgh/nexus/values.yaml.gotmpl
+  - jx-values.yaml
 - chart: jxgh/jx-build-controller
   version: 0.3.9
   name: jx-build-controller

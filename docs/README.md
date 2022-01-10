@@ -72,10 +72,10 @@
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
     <tr>
-	      <td><a href='' title='A Helm chart for bucketrepo service'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/go.png' width='24px' height='24px'> bucketrepo </a></td>
-	      <td>0.1.67</td>
+	      <td><a href='https://github.com/jenkins-x-charts/nexus' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/jenkins-x-platform/images/nexus.png' width='24px' height='24px'> nexus </a></td>
+	      <td>0.1.41</td>
 	      <td></td>
-	      <td></td>
+	      <td><a href='https://github.com/jenkins-x-charts/nexus'>source</a></td>
 	    </tr>
     <tr>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
