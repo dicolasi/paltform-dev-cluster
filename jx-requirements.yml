@@ -52,7 +52,7 @@ spec:
   repositories:
     maven:
       releaseUrl: https://maven.pkg.github.com/property-xyz/platform-maven-repo/
-      snapshotURL: https://maven.pkg.github.com/property-xyz/platform-maven-repo/
+      snapshotUrl: https://maven.pkg.github.com/property-xyz/platform-maven-repo/
   repository: github
   secretStorage: vault
   storage:
