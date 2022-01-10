@@ -53,7 +53,7 @@ spec:
     maven:
       releaseUrl: https://maven.pkg.github.com/property-xyz/platform-maven-repo/
       snapshotURL: https://maven.pkg.github.com/property-xyz/platform-maven-repo/
-  repository: github
+  repository: bucketrepo
   secretStorage: vault
   storage:
   - name: logs
