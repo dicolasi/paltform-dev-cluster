@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   name: lighthouse-tekton-controller
   labels:
-    chart: "lighthouse-1.5.4"
+    chart: "lighthouse-1.5.7"
     app: lighthouse-tekton-controller
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
@@ -25,7 +25,7 @@ spec:
       serviceAccountName: lighthouse-tekton-controller
       containers:
         - name: lighthouse-tekton-controller
-          image: ghcr.io/jenkins-x/lighthouse-tekton-controller:1.5.4
+          image: ghcr.io/jenkins-x/lighthouse-tekton-controller:1.5.7
           imagePullPolicy: IfNotPresent
           args:
             - --namespace=jx
@@ -40,7 +40,7 @@ spec:
             - name: LOGRUS_SERVICE
               value: "lighthouse"
             - name: LOGRUS_SERVICE_VERSION
-              value: "1.5.4"
+              value: "1.5.7"
             - name: LOGRUS_STACK_SKIP
               value: ""
             - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
@@ -54,7 +54,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "900a072af58c65599b02e3098cbb4d3136000c97"
+              value: "e7567f3667992926155bc1e010e23c1c173e5d3b"
           envFrom:
             - secretRef:
                 name: jx-boot-job-env-vars
