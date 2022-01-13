@@ -33,7 +33,7 @@ spec:
                 - --to
                 - jx
               name: copy-secret
-              image: "ghcr.io/jenkins-x/jx-boot:3.2.242"
+              image: "ghcr.io/jenkins-x/jx-boot:3.2.243"
               imagePullPolicy: Always
               resources: {}
               terminationMessagePath: /dev/termination-log
