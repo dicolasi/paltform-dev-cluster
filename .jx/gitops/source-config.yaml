@@ -20,7 +20,7 @@ spec:
     - name: data-landregistry-sparql-client
     - name: data-outcode-stats-service
     - name: data-rdf-client
-    - name: data-rent_demand-service
+    - name: data-rent-demand-service
     - name: data-seed
     - name: data-transaction-info-service
     - name: data-uk-national-statistics

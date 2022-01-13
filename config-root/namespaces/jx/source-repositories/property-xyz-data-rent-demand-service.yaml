@@ -10,13 +10,13 @@ metadata:
   name: property-xyz-data-rent-demand-service
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/property-xyz/data-rent_demand-service.git
+  httpCloneURL: https://github.com/property-xyz/data-rent-demand-service.git
   org: property-xyz
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: data-rent_demand-service
+  repo: data-rent-demand-service
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/property-xyz/data-rent_demand-service
+  url: https://github.com/property-xyz/data-rent-demand-service

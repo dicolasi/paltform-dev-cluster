@@ -60,7 +60,7 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - property-xyz/data-rent_demand-service
+      - property-xyz/data-rent-demand-service
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -175,7 +175,7 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
-      property-xyz/data-rent_demand-service:
+      property-xyz/data-rent-demand-service:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -426,7 +426,7 @@ data:
       - cat
       - dog
       - pony
-      property-xyz/data-rent_demand-service:
+      property-xyz/data-rent-demand-service:
       - approve
       - assign
       - blunderbuss
@@ -703,7 +703,7 @@ data:
       - property-xyz/data-rdf-client
       trusted_org: todo
     - repos:
-      - property-xyz/data-rent_demand-service
+      - property-xyz/data-rent-demand-service
       trusted_org: todo
     - repos:
       - property-xyz/data-seed
