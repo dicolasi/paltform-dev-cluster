@@ -18,6 +18,7 @@ data:
         property-xyz/data-landregistry-sparql-client: true
         property-xyz/data-outcode-stats-service: true
         property-xyz/data-rdf-client: true
+        property-xyz/data-rent_demand-service: true
         property-xyz/data-seed: true
         property-xyz/data-transaction-info-service: true
         property-xyz/data-uk-national-statistics: true
@@ -53,6 +54,7 @@ data:
         property-xyz/data-landregistry-sparql-client: merge
         property-xyz/data-outcode-stats-service: merge
         property-xyz/data-rdf-client: merge
+        property-xyz/data-rent_demand-service: merge
         property-xyz/data-seed: merge
         property-xyz/data-transaction-info-service: merge
         property-xyz/data-uk-national-statistics: merge
@@ -90,6 +92,7 @@ data:
         - property-xyz/data-landregistry-sparql-client
         - property-xyz/data-outcode-stats-service
         - property-xyz/data-rdf-client
+        - property-xyz/data-rent_demand-service
         - property-xyz/data-seed
         - property-xyz/data-transaction-info-service
         - property-xyz/data-uk-national-statistics
@@ -123,6 +126,7 @@ data:
         - property-xyz/data-landregistry-sparql-client
         - property-xyz/data-outcode-stats-service
         - property-xyz/data-rdf-client
+        - property-xyz/data-rent_demand-service
         - property-xyz/data-seed
         - property-xyz/data-transaction-info-service
         - property-xyz/data-uk-national-statistics
