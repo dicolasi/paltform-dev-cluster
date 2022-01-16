@@ -3,9 +3,9 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: gcjobs
+  namespace: "jx"
   annotations:
     meta.helm.sh/release-name: 'jxboot-helmfile-resources'
-  namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 roleRef:

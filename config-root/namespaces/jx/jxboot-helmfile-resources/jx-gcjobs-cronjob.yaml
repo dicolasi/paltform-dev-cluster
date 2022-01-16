@@ -3,9 +3,9 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: jx-gcjobs
+  namespace: "jx"
   annotations:
     meta.helm.sh/release-name: 'jxboot-helmfile-resources'
-  namespace: jx
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
@@ -34,7 +34,7 @@ spec:
                 - --namespace
                 - jx-git-operator
               imagePullPolicy: IfNotPresent
-              image: "ghcr.io/jenkins-x/jx-boot:3.2.243"
+              image: "ghcr.io/jenkins-x/jx-boot:3.2.244"
               env:
                 - name: JX_LOG_FORMAT
                   value: json
