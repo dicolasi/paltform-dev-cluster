@@ -12,7 +12,7 @@ metadata:
 spec:
   secretName: "tls-dev-property-xyz-p"
   issuerRef:
-    name: zerossl-prod
+    name: letsencrypt-prod
     kind: ClusterIssuer
   commonName: "*.dev.property.xyz"
   dnsNames:
