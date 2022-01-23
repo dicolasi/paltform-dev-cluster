@@ -26,6 +26,7 @@ spec:
     - name: data-uk-national-statistics
     - name: data-uprn-service
     - name: data-yield-stats-service
+    - name: platform-azure-demonset
     - name: platform-frontend
     - name: platform-lambda-crm-integration
     - name: platform-lambda-mail-service

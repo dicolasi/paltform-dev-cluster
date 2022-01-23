@@ -84,6 +84,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - property-xyz/platform-azure-demonset
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - property-xyz/platform-frontend
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -206,6 +210,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       property-xyz/dev_platform-cluster-azure:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/platform-azure-demonset:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -539,6 +548,22 @@ data:
       - cat
       - dog
       - pony
+      property-xyz/platform-azure-demonset:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       property-xyz/platform-frontend:
       - approve
       - assign
@@ -719,6 +744,9 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/data-yield-stats-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/platform-azure-demonset
       trusted_org: todo
     - repos:
       - property-xyz/platform-frontend
