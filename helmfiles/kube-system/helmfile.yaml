@@ -1,0 +1,15 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: kube-system
+repositories:
+- name: dev
+  url: https://property-xyz.github.io/platform-helm-charts
+releases:
+- chart: dev/platform-azure-demonset
+  version: 0.0.2
+  name: platform-azure-demonset
+templates: {}
+renderedvalues: {}

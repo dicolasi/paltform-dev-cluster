@@ -5,8 +5,6 @@ environments:
     - jx-values.yaml
 namespace: jx
 repositories:
-- name: dev
-  url: https://property-xyz.github.io/platform-helm-charts
 - name: stable
   url: https://charts.helm.sh/stable
 - name: bitnami
@@ -79,8 +77,5 @@ releases:
   values:
   - ../../versionStream/charts/jxgh/lighthouse-webui-plugin/values.yaml.gotmpl
   - jx-values.yaml
-- chart: dev/platform-azure-demonset
-  version: 0.0.2
-  name: platform-azure-demonset
 templates: {}
 renderedvalues: {}
