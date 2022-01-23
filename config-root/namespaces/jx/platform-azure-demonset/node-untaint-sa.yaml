@@ -1,0 +1,10 @@
+# Source: platform-azure-demonset/templates/rbac.yaml
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: node-untaint
+  namespace: jx
+  annotations:
+    meta.helm.sh/release-name: 'platform-azure-demonset'
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
