@@ -12,6 +12,15 @@
   </thead>
   <tbody>
     <tr>
+		      <td colspan='4'><h3>kube-system</h3></td>
+		    </tr>
+	    <tr>
+	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> platform-azure-demonset </a></td>
+	      <td>0.0.2</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+    <tr>
 		      <td colspan='4'><h3>cert-manager</h3></td>
 		    </tr>
 	    <tr>
@@ -88,12 +97,6 @@
 	      <td>0.1.7</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'>source</a></td>
-	    </tr>
-    <tr>
-	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> platform-azure-demonset </a></td>
-	      <td>0.0.2</td>
-	      <td></td>
-	      <td></td>
 	    </tr>
     <tr>
 		      <td colspan='4'><h3>nginx</h3></td>

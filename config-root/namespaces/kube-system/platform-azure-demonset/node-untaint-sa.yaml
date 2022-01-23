@@ -3,7 +3,7 @@ kind: ServiceAccount
 apiVersion: v1
 metadata:
   name: node-untaint
-  namespace: jx
+  namespace: kube-system
   annotations:
     meta.helm.sh/release-name: 'platform-azure-demonset'
   labels:
