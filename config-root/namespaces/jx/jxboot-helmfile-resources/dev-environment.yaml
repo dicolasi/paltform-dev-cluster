@@ -33,5 +33,5 @@ spec:
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
     storageLocations:
-      - bucketUrl: azblob://logs
-        classifier: logs
+      - bucketUrl: "azblob://logs"
+        classifier: "logs"
