@@ -13,7 +13,6 @@ spec:
     - name: data-demand-stats-service
     - name: data-epc-service
     - name: data-export-service
-    - name: data-export-service
     - name: data-growth-stats-service
     - name: data-hmo-service
     - name: data-infinispan-cache
@@ -22,9 +21,7 @@ spec:
     - name: data-rdf-client
     - name: data-rent-demand-service
     - name: data-seed
-    - name: data-transaction-info-service
     - name: data-uk-national-statistics
-    - name: data-uprn-service
     - name: data-yield-stats-service
     - name: platform-azure-demonset
     - name: platform-frontend
