@@ -21,9 +21,7 @@ data:
         property-xyz/data-rdf-client: true
         property-xyz/data-rent-demand-service: true
         property-xyz/data-seed: true
-        property-xyz/data-transaction-info-service: true
         property-xyz/data-uk-national-statistics: true
-        property-xyz/data-uprn-service: true
         property-xyz/data-yield-stats-service: true
         property-xyz/dev_platform-cluster-azure: true
         property-xyz/platform-azure-demonset: true
@@ -59,9 +57,7 @@ data:
         property-xyz/data-rdf-client: merge
         property-xyz/data-rent-demand-service: merge
         property-xyz/data-seed: merge
-        property-xyz/data-transaction-info-service: merge
         property-xyz/data-uk-national-statistics: merge
-        property-xyz/data-uprn-service: merge
         property-xyz/data-yield-stats-service: merge
         property-xyz/dev_platform-cluster-azure: merge
         property-xyz/platform-azure-demonset: merge
@@ -99,9 +95,7 @@ data:
         - property-xyz/data-rdf-client
         - property-xyz/data-rent-demand-service
         - property-xyz/data-seed
-        - property-xyz/data-transaction-info-service
         - property-xyz/data-uk-national-statistics
-        - property-xyz/data-uprn-service
         - property-xyz/data-yield-stats-service
         - property-xyz/platform-azure-demonset
         - property-xyz/platform-frontend
@@ -135,9 +129,7 @@ data:
         - property-xyz/data-rdf-client
         - property-xyz/data-rent-demand-service
         - property-xyz/data-seed
-        - property-xyz/data-transaction-info-service
         - property-xyz/data-uk-national-statistics
-        - property-xyz/data-uprn-service
         - property-xyz/data-yield-stats-service
         - property-xyz/platform-azure-demonset
         - property-xyz/platform-frontend
