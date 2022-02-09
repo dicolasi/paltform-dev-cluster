@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: spot-node-untaint
-  namespace: jx
+  namespace: kube-system
   labels:
     app: spot-node-untaint
     gitops.jenkins-x.io/pipeline: 'namespaces'

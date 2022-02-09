@@ -10,6 +10,7 @@ spec:
     repositories:
     - name: data-avm-service
     - name: data-council-tax-service
+    - name: data-crime-stats
     - name: data-demand-stats-service
     - name: data-epc-service
     - name: data-export-service

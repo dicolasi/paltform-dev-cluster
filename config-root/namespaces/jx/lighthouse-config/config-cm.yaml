@@ -9,6 +9,7 @@ data:
       enabled:
         property-xyz/data-avm-service: true
         property-xyz/data-council-tax-service: true
+        property-xyz/data-crime-stats: true
         property-xyz/data-demand-stats-service: true
         property-xyz/data-epc-service: true
         property-xyz/data-export-service: true
@@ -46,6 +47,7 @@ data:
       merge_method:
         property-xyz/data-avm-service: merge
         property-xyz/data-council-tax-service: merge
+        property-xyz/data-crime-stats: merge
         property-xyz/data-demand-stats-service: merge
         property-xyz/data-epc-service: merge
         property-xyz/data-export-service: merge
@@ -85,6 +87,7 @@ data:
         - property-xyz/stage_platform-cluster
         - property-xyz/data-avm-service
         - property-xyz/data-council-tax-service
+        - property-xyz/data-crime-stats
         - property-xyz/data-demand-stats-service
         - property-xyz/data-epc-service
         - property-xyz/data-export-service
@@ -120,6 +123,7 @@ data:
         - property-xyz/stage_platform-cluster
         - property-xyz/data-avm-service
         - property-xyz/data-council-tax-service
+        - property-xyz/data-crime-stats
         - property-xyz/data-demand-stats-service
         - property-xyz/data-epc-service
         - property-xyz/data-export-service

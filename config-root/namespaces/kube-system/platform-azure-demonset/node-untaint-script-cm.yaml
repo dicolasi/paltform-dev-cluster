@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: node-untaint-script
-  namespace: jx
+  namespace: kube-system
   annotations:
     meta.helm.sh/release-name: 'platform-azure-demonset'
   labels:
