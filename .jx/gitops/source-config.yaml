@@ -30,6 +30,7 @@ spec:
     - name: platform-lambda-mail-service
     - name: platform-postcodes-io-db
     - name: platform-search-service
+    - name: platform-site-map
     - name: prod_platform-cluster
     - name: stage_platform-cluster
     scheduler: in-repo

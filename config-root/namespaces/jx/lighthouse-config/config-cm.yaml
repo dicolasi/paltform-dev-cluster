@@ -30,6 +30,7 @@ data:
         property-xyz/platform-lambda-mail-service: true
         property-xyz/platform-postcodes-io-db: true
         property-xyz/platform-search-service: true
+        property-xyz/platform-site-map: true
         property-xyz/prod_platform-cluster: true
         property-xyz/stage_platform-cluster: true
     plank: {}
@@ -66,6 +67,7 @@ data:
         property-xyz/platform-lambda-mail-service: merge
         property-xyz/platform-postcodes-io-db: merge
         property-xyz/platform-search-service: merge
+        property-xyz/platform-site-map: merge
         property-xyz/prod_platform-cluster: merge
         property-xyz/stage_platform-cluster: merge
       queries:
@@ -103,6 +105,7 @@ data:
         - property-xyz/platform-lambda-mail-service
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
+        - property-xyz/platform-site-map
       - labels:
         - updatebot
         missingLabels:
@@ -137,6 +140,7 @@ data:
         - property-xyz/platform-lambda-mail-service
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
+        - property-xyz/platform-site-map
       target_url: http://lighthouse.dev.property.xyz/merge/status
 kind: ConfigMap
 metadata:

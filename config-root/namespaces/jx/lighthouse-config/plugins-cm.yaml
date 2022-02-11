@@ -104,6 +104,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - property-xyz/platform-site-map
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - property-xyz/prod_platform-cluster
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -231,6 +235,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       property-xyz/platform-search-service:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/platform-site-map:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -619,6 +628,22 @@ data:
       - cat
       - dog
       - pony
+      property-xyz/platform-site-map:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       property-xyz/prod_platform-cluster:
       - approve
       - assign
@@ -734,6 +759,9 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/platform-search-service
+      trusted_org: todo
+    - repos:
+      - property-xyz/platform-site-map
       trusted_org: todo
     - repos:
       - property-xyz/prod_platform-cluster
