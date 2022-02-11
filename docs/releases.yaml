@@ -92,17 +92,17 @@
     - https://github.com/kubernetes-sigs/external-dns
     version: 6.0.2
   - apiVersion: v1
-    appVersion: 1.1.26
+    appVersion: 1.1.27
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2022-02-06T10:52:13Z"
+    firstDeployed: "2022-02-11T08:06:34Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-02-06T10:52:13Z"
+    lastDeployed: "2022-02-11T08:06:34Z"
     name: jxboot-helmfile-resources
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.1.26
+    version: 1.1.27
   - apiVersion: v1
     appVersion: 1.7.5
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
@@ -131,15 +131,15 @@
     version: 0.0.192
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
-    firstDeployed: "2022-02-07T12:06:41Z"
+    firstDeployed: "2022-02-11T08:06:45Z"
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-02-07T12:06:41Z"
+    lastDeployed: "2022-02-11T08:06:45Z"
     name: lighthouse
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 1.5.9
+    version: 1.5.10
   - apiVersion: v1
     appVersion: 0.1.41
     description: A Helm chart for Kubernetes
