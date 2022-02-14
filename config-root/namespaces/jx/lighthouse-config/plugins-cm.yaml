@@ -16,6 +16,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - property-xyz/cron-postcode-emitter
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - property-xyz/data-avm-service
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -124,6 +128,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      property-xyz/cron-postcode-emitter:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       property-xyz/data-avm-service:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -259,6 +268,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      property-xyz/cron-postcode-emitter:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       property-xyz/data-avm-service:
       - approve
       - assign
@@ -693,6 +718,9 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/stage_platform-cluster
+      trusted_org: todo
+    - repos:
+      - property-xyz/cron-postcode-emitter
       trusted_org: todo
     - repos:
       - property-xyz/data-avm-service
