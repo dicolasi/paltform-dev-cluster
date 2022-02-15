@@ -29,6 +29,7 @@ spec:
     - name: platform-frontend
     - name: platform-lambda-crm-integration
     - name: platform-lambda-mail-service
+    - name: platform-lambda-uk-address-processor
     - name: platform-postcodes-io-db
     - name: platform-search-service
     - name: platform-site-map

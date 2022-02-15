@@ -29,6 +29,7 @@ data:
         property-xyz/platform-frontend: true
         property-xyz/platform-lambda-crm-integration: true
         property-xyz/platform-lambda-mail-service: true
+        property-xyz/platform-lambda-uk-address-processor: true
         property-xyz/platform-postcodes-io-db: true
         property-xyz/platform-search-service: true
         property-xyz/platform-site-map: true
@@ -67,6 +68,7 @@ data:
         property-xyz/platform-frontend: merge
         property-xyz/platform-lambda-crm-integration: merge
         property-xyz/platform-lambda-mail-service: merge
+        property-xyz/platform-lambda-uk-address-processor: merge
         property-xyz/platform-postcodes-io-db: merge
         property-xyz/platform-search-service: merge
         property-xyz/platform-site-map: merge
@@ -106,6 +108,7 @@ data:
         - property-xyz/platform-frontend
         - property-xyz/platform-lambda-crm-integration
         - property-xyz/platform-lambda-mail-service
+        - property-xyz/platform-lambda-uk-address-processor
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
         - property-xyz/platform-site-map
@@ -142,6 +145,7 @@ data:
         - property-xyz/platform-frontend
         - property-xyz/platform-lambda-crm-integration
         - property-xyz/platform-lambda-mail-service
+        - property-xyz/platform-lambda-uk-address-processor
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
         - property-xyz/platform-site-map
