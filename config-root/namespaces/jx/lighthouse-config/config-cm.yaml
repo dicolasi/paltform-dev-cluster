@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         property-xyz/cron-postcode-emitter: true
+        property-xyz/crontab-sitemap-builder: true
         property-xyz/data-avm-service: true
         property-xyz/data-council-tax-service: true
         property-xyz/data-crime-stats: true
@@ -47,6 +48,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         property-xyz/cron-postcode-emitter: merge
+        property-xyz/crontab-sitemap-builder: merge
         property-xyz/data-avm-service: merge
         property-xyz/data-council-tax-service: merge
         property-xyz/data-crime-stats: merge
@@ -88,6 +90,7 @@ data:
         - property-xyz/prod_platform-cluster
         - property-xyz/stage_platform-cluster
         - property-xyz/cron-postcode-emitter
+        - property-xyz/crontab-sitemap-builder
         - property-xyz/data-avm-service
         - property-xyz/data-council-tax-service
         - property-xyz/data-crime-stats
@@ -125,6 +128,7 @@ data:
         - property-xyz/prod_platform-cluster
         - property-xyz/stage_platform-cluster
         - property-xyz/cron-postcode-emitter
+        - property-xyz/crontab-sitemap-builder
         - property-xyz/data-avm-service
         - property-xyz/data-council-tax-service
         - property-xyz/data-crime-stats
