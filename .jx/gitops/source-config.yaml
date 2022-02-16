@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: cron-postcode-emitter
+    - name: crontab-sitemap-builder
     - name: data-avm-service
     - name: data-council-tax-service
     - name: data-crime-stats
