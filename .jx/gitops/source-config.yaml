@@ -26,6 +26,7 @@ spec:
     - name: data-yield-stats-service
     - name: platform-azure-demonset
     - name: platform-frontend
+    - name: platform-lambda-address-publisher
     - name: platform-lambda-crm-integration
     - name: platform-lambda-mail-service
     - name: platform-lambda-sitemap-builder
