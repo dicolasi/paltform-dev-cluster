@@ -19,7 +19,6 @@ data:
         property-xyz/data-infinispan-cache: true
         property-xyz/data-landregistry-sparql-client: true
         property-xyz/data-outcode-stats-service: true
-        property-xyz/data-rdf-client: true
         property-xyz/data-rent-demand-service: true
         property-xyz/data-seed: true
         property-xyz/data-uk-national-statistics: true
@@ -29,7 +28,6 @@ data:
         property-xyz/platform-frontend: true
         property-xyz/platform-lambda-crm-integration: true
         property-xyz/platform-lambda-mail-service: true
-        property-xyz/platform-lambda-sitemap-builder: true
         property-xyz/platform-lambda-uk-address-processor: true
         property-xyz/platform-postcodes-io-db: true
         property-xyz/platform-search-service: true
@@ -59,7 +57,6 @@ data:
         property-xyz/data-infinispan-cache: merge
         property-xyz/data-landregistry-sparql-client: merge
         property-xyz/data-outcode-stats-service: merge
-        property-xyz/data-rdf-client: merge
         property-xyz/data-rent-demand-service: merge
         property-xyz/data-seed: merge
         property-xyz/data-uk-national-statistics: merge
@@ -69,7 +66,6 @@ data:
         property-xyz/platform-frontend: merge
         property-xyz/platform-lambda-crm-integration: merge
         property-xyz/platform-lambda-mail-service: merge
-        property-xyz/platform-lambda-sitemap-builder: merge
         property-xyz/platform-lambda-uk-address-processor: merge
         property-xyz/platform-postcodes-io-db: merge
         property-xyz/platform-search-service: merge
@@ -101,7 +97,6 @@ data:
         - property-xyz/data-infinispan-cache
         - property-xyz/data-landregistry-sparql-client
         - property-xyz/data-outcode-stats-service
-        - property-xyz/data-rdf-client
         - property-xyz/data-rent-demand-service
         - property-xyz/data-seed
         - property-xyz/data-uk-national-statistics
@@ -110,7 +105,6 @@ data:
         - property-xyz/platform-frontend
         - property-xyz/platform-lambda-crm-integration
         - property-xyz/platform-lambda-mail-service
-        - property-xyz/platform-lambda-sitemap-builder
         - property-xyz/platform-lambda-uk-address-processor
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
@@ -139,7 +133,6 @@ data:
         - property-xyz/data-infinispan-cache
         - property-xyz/data-landregistry-sparql-client
         - property-xyz/data-outcode-stats-service
-        - property-xyz/data-rdf-client
         - property-xyz/data-rent-demand-service
         - property-xyz/data-seed
         - property-xyz/data-uk-national-statistics
@@ -148,7 +141,6 @@ data:
         - property-xyz/platform-frontend
         - property-xyz/platform-lambda-crm-integration
         - property-xyz/platform-lambda-mail-service
-        - property-xyz/platform-lambda-sitemap-builder
         - property-xyz/platform-lambda-uk-address-processor
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service

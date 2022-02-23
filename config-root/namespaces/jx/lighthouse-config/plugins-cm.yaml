@@ -64,10 +64,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - property-xyz/data-rdf-client
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - property-xyz/data-rent-demand-service
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -97,10 +93,6 @@ data:
     - lgtm_acts_as_approve: true
       repos:
       - property-xyz/platform-lambda-mail-service
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
-      - property-xyz/platform-lambda-sitemap-builder
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
@@ -196,11 +188,6 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
-      property-xyz/data-rdf-client:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
-        name: lighthouse-webui-plugin
       property-xyz/data-rent-demand-service:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -242,11 +229,6 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       property-xyz/platform-lambda-mail-service:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
-        name: lighthouse-webui-plugin
-      property-xyz/platform-lambda-sitemap-builder:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -478,22 +460,6 @@ data:
       - cat
       - dog
       - pony
-      property-xyz/data-rdf-client:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       property-xyz/data-rent-demand-service:
       - approve
       - assign
@@ -624,22 +590,6 @@ data:
       - dog
       - pony
       property-xyz/platform-lambda-mail-service:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      property-xyz/platform-lambda-sitemap-builder:
       - approve
       - assign
       - blunderbuss
@@ -806,9 +756,6 @@ data:
       - property-xyz/data-outcode-stats-service
       trusted_org: todo
     - repos:
-      - property-xyz/data-rdf-client
-      trusted_org: todo
-    - repos:
       - property-xyz/data-rent-demand-service
       trusted_org: todo
     - repos:
@@ -831,9 +778,6 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/platform-lambda-mail-service
-      trusted_org: todo
-    - repos:
-      - property-xyz/platform-lambda-sitemap-builder
       trusted_org: todo
     - repos:
       - property-xyz/platform-lambda-uk-address-processor
