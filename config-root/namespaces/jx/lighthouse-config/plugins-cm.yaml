@@ -96,10 +96,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - property-xyz/platform-lambda-sitemap-builder
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - property-xyz/platform-lambda-uk-address-processor
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -233,11 +229,6 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       property-xyz/platform-lambda-mail-service:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
-        name: lighthouse-webui-plugin
-      property-xyz/platform-lambda-sitemap-builder:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -614,22 +605,6 @@ data:
       - cat
       - dog
       - pony
-      property-xyz/platform-lambda-sitemap-builder:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       property-xyz/platform-lambda-uk-address-processor:
       - approve
       - assign
@@ -803,9 +778,6 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/platform-lambda-mail-service
-      trusted_org: todo
-    - repos:
-      - property-xyz/platform-lambda-sitemap-builder
       trusted_org: todo
     - repos:
       - property-xyz/platform-lambda-uk-address-processor
