@@ -64,10 +64,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - property-xyz/data-rdf-client
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - property-xyz/data-rent-demand-service
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -192,11 +188,6 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       property-xyz/data-outcode-stats-service:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
-        name: lighthouse-webui-plugin
-      property-xyz/data-rdf-client:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -463,22 +454,6 @@ data:
       - dog
       - pony
       property-xyz/data-outcode-stats-service:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
-      property-xyz/data-rdf-client:
       - approve
       - assign
       - blunderbuss
@@ -804,9 +779,6 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/data-outcode-stats-service
-      trusted_org: todo
-    - repos:
-      - property-xyz/data-rdf-client
       trusted_org: todo
     - repos:
       - property-xyz/data-rent-demand-service
