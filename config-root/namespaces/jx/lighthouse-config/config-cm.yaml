@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         property-xyz/cron-postcode-emitter: true
+        property-xyz/cron-sitemap-builder: true
         property-xyz/data-avm-service: true
         property-xyz/data-council-tax-service: true
         property-xyz/data-crime-stats: true
@@ -34,7 +35,6 @@ data:
         property-xyz/platform-search-service: true
         property-xyz/platform-site-map: true
         property-xyz/prod_platform-cluster: true
-        property-xyz/seo-lambda-sitemap-builder: true
         property-xyz/stage_platform-cluster: true
     plank: {}
     pod_namespace: jx
@@ -48,6 +48,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         property-xyz/cron-postcode-emitter: merge
+        property-xyz/cron-sitemap-builder: merge
         property-xyz/data-avm-service: merge
         property-xyz/data-council-tax-service: merge
         property-xyz/data-crime-stats: merge
@@ -74,7 +75,6 @@ data:
         property-xyz/platform-search-service: merge
         property-xyz/platform-site-map: merge
         property-xyz/prod_platform-cluster: merge
-        property-xyz/seo-lambda-sitemap-builder: merge
         property-xyz/stage_platform-cluster: merge
       queries:
       - labels:
@@ -90,6 +90,7 @@ data:
         - property-xyz/prod_platform-cluster
         - property-xyz/stage_platform-cluster
         - property-xyz/cron-postcode-emitter
+        - property-xyz/cron-sitemap-builder
         - property-xyz/data-avm-service
         - property-xyz/data-council-tax-service
         - property-xyz/data-crime-stats
@@ -114,7 +115,6 @@ data:
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
         - property-xyz/platform-site-map
-        - property-xyz/seo-lambda-sitemap-builder
       - labels:
         - updatebot
         missingLabels:
@@ -128,6 +128,7 @@ data:
         - property-xyz/prod_platform-cluster
         - property-xyz/stage_platform-cluster
         - property-xyz/cron-postcode-emitter
+        - property-xyz/cron-sitemap-builder
         - property-xyz/data-avm-service
         - property-xyz/data-council-tax-service
         - property-xyz/data-crime-stats
@@ -152,7 +153,6 @@ data:
         - property-xyz/platform-postcodes-io-db
         - property-xyz/platform-search-service
         - property-xyz/platform-site-map
-        - property-xyz/seo-lambda-sitemap-builder
       target_url: http://lighthouse.dev.property.xyz/merge/status
 kind: ConfigMap
 metadata:

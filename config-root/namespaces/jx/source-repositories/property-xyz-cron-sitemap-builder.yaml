@@ -5,18 +5,18 @@ metadata:
   labels:
     owner: property-xyz
     provider: github
-    repository: seo-lambda-sitemap-builder
+    repository: cron-sitemap-builder
     gitops.jenkins-x.io/pipeline: 'namespaces'
-  name: property-xyz-seo-lambda-sitemap-builder
+  name: property-xyz-cron-sitemap-builder
   namespace: jx
 spec:
-  httpCloneURL: https://github.com/property-xyz/seo-lambda-sitemap-builder.git
+  httpCloneURL: https://github.com/property-xyz/cron-sitemap-builder.git
   org: property-xyz
   provider: https://github.com
   providerKind: github
   providerName: github
-  repo: seo-lambda-sitemap-builder
+  repo: cron-sitemap-builder
   scheduler:
     kind: ""
     name: in-repo
-  url: https://github.com/property-xyz/seo-lambda-sitemap-builder
+  url: https://github.com/property-xyz/cron-sitemap-builder

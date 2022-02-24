@@ -20,6 +20,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - property-xyz/cron-sitemap-builder
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - property-xyz/data-avm-service
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -120,10 +124,6 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
-      - property-xyz/seo-lambda-sitemap-builder
-      require_self_approval: true
-    - lgtm_acts_as_approve: true
-      repos:
       - property-xyz/stage_platform-cluster
       require_self_approval: true
     cat: {}
@@ -137,6 +137,11 @@ data:
           name: plugins
     external_plugins:
       property-xyz/cron-postcode-emitter:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/cron-sitemap-builder:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -271,11 +276,6 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
-      property-xyz/seo-lambda-sitemap-builder:
-      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
-        name: cd-indicators
-      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
-        name: lighthouse-webui-plugin
       property-xyz/stage_platform-cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -287,6 +287,22 @@ data:
     owners: {}
     plugins:
       property-xyz/cron-postcode-emitter:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/cron-sitemap-builder:
       - approve
       - assign
       - blunderbuss
@@ -719,22 +735,6 @@ data:
       - cat
       - dog
       - pony
-      property-xyz/seo-lambda-sitemap-builder:
-      - approve
-      - assign
-      - blunderbuss
-      - help
-      - hold
-      - lgtm
-      - lifecycle
-      - override
-      - size
-      - trigger
-      - wip
-      - heart
-      - cat
-      - dog
-      - pony
       property-xyz/stage_platform-cluster:
       - approve
       - assign
@@ -771,6 +771,9 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/cron-postcode-emitter
+      trusted_org: todo
+    - repos:
+      - property-xyz/cron-sitemap-builder
       trusted_org: todo
     - repos:
       - property-xyz/data-avm-service
@@ -846,9 +849,6 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/prod_platform-cluster
-      trusted_org: todo
-    - repos:
-      - property-xyz/seo-lambda-sitemap-builder
       trusted_org: todo
     - repos:
       - property-xyz/stage_platform-cluster
