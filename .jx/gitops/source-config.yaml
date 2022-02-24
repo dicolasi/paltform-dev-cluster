@@ -34,7 +34,7 @@ spec:
     - name: platform-search-service
     - name: platform-site-map
     - name: prod_platform-cluster
-    - name: seo-lambda-sitemap-builder
+    - name: cron-sitemap-builder
     - name: stage_platform-cluster
     scheduler: in-repo
   slack:
