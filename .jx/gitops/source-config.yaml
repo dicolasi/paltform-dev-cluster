@@ -29,13 +29,11 @@ spec:
     - name: platform-lambda-address-publisher
     - name: platform-lambda-crm-integration
     - name: platform-lambda-mail-service
-    - name: platform-lambda-sitemap-builder
     - name: platform-lambda-uk-address-processor
     - name: platform-postcodes-io-db
     - name: platform-search-service
     - name: platform-site-map
     - name: prod_platform-cluster
-    - name: seo-lambda-sitemap-builder
     - name: stage_platform-cluster
     scheduler: in-repo
   slack:
