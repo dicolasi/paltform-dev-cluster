@@ -1,0 +1,159 @@
+apiVersion: v1
+data:
+  config.yaml: |
+    branch-protection:
+      protect-tested-repos: true
+    github:
+      LinkURL: null
+    in_repo_config:
+      enabled:
+        property-xyz/cron-postcode-emitter: true
+        property-xyz/data-avm-service: true
+        property-xyz/data-council-tax-service: true
+        property-xyz/data-crime-stats: true
+        property-xyz/data-demand-stats-service: true
+        property-xyz/data-epc-service: true
+        property-xyz/data-export-service: true
+        property-xyz/data-growth-stats-service: true
+        property-xyz/data-hmo-service: true
+        property-xyz/data-infinispan-cache: true
+        property-xyz/data-landregistry-sparql-client: true
+        property-xyz/data-outcode-stats-service: true
+        property-xyz/data-rent-demand-service: true
+        property-xyz/data-seed: true
+        property-xyz/data-uk-national-statistics: true
+        property-xyz/data-yield-stats-service: true
+        property-xyz/dev_platform-cluster-azure: true
+        property-xyz/platform-azure-demonset: true
+        property-xyz/platform-frontend: true
+        property-xyz/platform-lambda-address-publisher: true
+        property-xyz/platform-lambda-crm-integration: true
+        property-xyz/platform-lambda-mail-service: true
+        property-xyz/platform-lambda-uk-address-processor: true
+        property-xyz/platform-postcodes-io-db: true
+        property-xyz/platform-search-service: true
+        property-xyz/platform-site-map: true
+        property-xyz/prod_platform-cluster: true
+        property-xyz/stage_platform-cluster: true
+    plank: {}
+    pod_namespace: jx
+    prowjob_namespace: jx
+    push_gateway:
+      serve_metrics: true
+    tide:
+      context_options:
+        from-branch-protection: true
+        required-if-present-contexts: null
+        skip-unknown-contexts: false
+      merge_method:
+        property-xyz/cron-postcode-emitter: merge
+        property-xyz/data-avm-service: merge
+        property-xyz/data-council-tax-service: merge
+        property-xyz/data-crime-stats: merge
+        property-xyz/data-demand-stats-service: merge
+        property-xyz/data-epc-service: merge
+        property-xyz/data-export-service: merge
+        property-xyz/data-growth-stats-service: merge
+        property-xyz/data-hmo-service: merge
+        property-xyz/data-infinispan-cache: merge
+        property-xyz/data-landregistry-sparql-client: merge
+        property-xyz/data-outcode-stats-service: merge
+        property-xyz/data-rent-demand-service: merge
+        property-xyz/data-seed: merge
+        property-xyz/data-uk-national-statistics: merge
+        property-xyz/data-yield-stats-service: merge
+        property-xyz/dev_platform-cluster-azure: merge
+        property-xyz/platform-azure-demonset: merge
+        property-xyz/platform-frontend: merge
+        property-xyz/platform-lambda-address-publisher: merge
+        property-xyz/platform-lambda-crm-integration: merge
+        property-xyz/platform-lambda-mail-service: merge
+        property-xyz/platform-lambda-uk-address-processor: merge
+        property-xyz/platform-postcodes-io-db: merge
+        property-xyz/platform-search-service: merge
+        property-xyz/platform-site-map: merge
+        property-xyz/prod_platform-cluster: merge
+        property-xyz/stage_platform-cluster: merge
+      queries:
+      - labels:
+        - approved
+        missingLabels:
+        - do-not-merge
+        - do-not-merge/hold
+        - do-not-merge/work-in-progress
+        - needs-ok-to-test
+        - needs-rebase
+        repos:
+        - property-xyz/dev_platform-cluster-azure
+        - property-xyz/prod_platform-cluster
+        - property-xyz/stage_platform-cluster
+        - property-xyz/cron-postcode-emitter
+        - property-xyz/data-avm-service
+        - property-xyz/data-council-tax-service
+        - property-xyz/data-crime-stats
+        - property-xyz/data-demand-stats-service
+        - property-xyz/data-epc-service
+        - property-xyz/data-export-service
+        - property-xyz/data-growth-stats-service
+        - property-xyz/data-hmo-service
+        - property-xyz/data-infinispan-cache
+        - property-xyz/data-landregistry-sparql-client
+        - property-xyz/data-outcode-stats-service
+        - property-xyz/data-rent-demand-service
+        - property-xyz/data-seed
+        - property-xyz/data-uk-national-statistics
+        - property-xyz/data-yield-stats-service
+        - property-xyz/platform-azure-demonset
+        - property-xyz/platform-frontend
+        - property-xyz/platform-lambda-address-publisher
+        - property-xyz/platform-lambda-crm-integration
+        - property-xyz/platform-lambda-mail-service
+        - property-xyz/platform-lambda-uk-address-processor
+        - property-xyz/platform-postcodes-io-db
+        - property-xyz/platform-search-service
+        - property-xyz/platform-site-map
+      - labels:
+        - updatebot
+        missingLabels:
+        - do-not-merge
+        - do-not-merge/hold
+        - do-not-merge/work-in-progress
+        - needs-ok-to-test
+        - needs-rebase
+        repos:
+        - property-xyz/dev_platform-cluster-azure
+        - property-xyz/prod_platform-cluster
+        - property-xyz/stage_platform-cluster
+        - property-xyz/cron-postcode-emitter
+        - property-xyz/data-avm-service
+        - property-xyz/data-council-tax-service
+        - property-xyz/data-crime-stats
+        - property-xyz/data-demand-stats-service
+        - property-xyz/data-epc-service
+        - property-xyz/data-export-service
+        - property-xyz/data-growth-stats-service
+        - property-xyz/data-hmo-service
+        - property-xyz/data-infinispan-cache
+        - property-xyz/data-landregistry-sparql-client
+        - property-xyz/data-outcode-stats-service
+        - property-xyz/data-rent-demand-service
+        - property-xyz/data-seed
+        - property-xyz/data-uk-national-statistics
+        - property-xyz/data-yield-stats-service
+        - property-xyz/platform-azure-demonset
+        - property-xyz/platform-frontend
+        - property-xyz/platform-lambda-address-publisher
+        - property-xyz/platform-lambda-crm-integration
+        - property-xyz/platform-lambda-mail-service
+        - property-xyz/platform-lambda-uk-address-processor
+        - property-xyz/platform-postcodes-io-db
+        - property-xyz/platform-search-service
+        - property-xyz/platform-site-map
+      target_url: http://lighthouse.dev.property.xyz/merge/status
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: config
+  namespace: jx
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

@@ -1,0 +1,16 @@
+# Source: platform-azure-demonset/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-untaint-script
+  namespace: kube-system
+  annotations:
+    meta.helm.sh/release-name: 'platform-azure-demonset'
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+data:
+  node-untaint-script.sh: |
+    #!/bin/bash
+
+    kubectl taint node ${NODE_NAME} kubernetes.azure.com/scalesetpriority-
+    tail -f /dev/null
