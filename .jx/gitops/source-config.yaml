@@ -9,7 +9,9 @@ spec:
     providerKind: github
     repositories:
     - name: cron-postcode-emitter
+    - name: cron-sitemap-builder
     - name: data-avm-service
+    - name: data-broadband
     - name: data-council-tax-service
     - name: data-crime-stats
     - name: data-demand-stats-service
@@ -34,7 +36,6 @@ spec:
     - name: platform-search-service
     - name: platform-site-map
     - name: prod_platform-cluster
-    - name: cron-sitemap-builder
     - name: stage_platform-cluster
     scheduler: in-repo
   slack:

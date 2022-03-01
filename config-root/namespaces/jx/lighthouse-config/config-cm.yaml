@@ -10,6 +10,7 @@ data:
         property-xyz/cron-postcode-emitter: true
         property-xyz/cron-sitemap-builder: true
         property-xyz/data-avm-service: true
+        property-xyz/data-broadband: true
         property-xyz/data-council-tax-service: true
         property-xyz/data-crime-stats: true
         property-xyz/data-demand-stats-service: true
@@ -50,6 +51,7 @@ data:
         property-xyz/cron-postcode-emitter: merge
         property-xyz/cron-sitemap-builder: merge
         property-xyz/data-avm-service: merge
+        property-xyz/data-broadband: merge
         property-xyz/data-council-tax-service: merge
         property-xyz/data-crime-stats: merge
         property-xyz/data-demand-stats-service: merge
@@ -92,6 +94,7 @@ data:
         - property-xyz/cron-postcode-emitter
         - property-xyz/cron-sitemap-builder
         - property-xyz/data-avm-service
+        - property-xyz/data-broadband
         - property-xyz/data-council-tax-service
         - property-xyz/data-crime-stats
         - property-xyz/data-demand-stats-service
@@ -130,6 +133,7 @@ data:
         - property-xyz/cron-postcode-emitter
         - property-xyz/cron-sitemap-builder
         - property-xyz/data-avm-service
+        - property-xyz/data-broadband
         - property-xyz/data-council-tax-service
         - property-xyz/data-crime-stats
         - property-xyz/data-demand-stats-service
