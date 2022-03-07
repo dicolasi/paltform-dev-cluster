@@ -92,17 +92,17 @@
     - https://github.com/kubernetes-sigs/external-dns
     version: 6.0.2
   - apiVersion: v1
-    appVersion: 1.1.35
+    appVersion: 1.1.37
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2022-02-25T08:35:52Z"
+    firstDeployed: "2022-03-07T07:49:44Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-02-25T08:35:52Z"
+    lastDeployed: "2022-03-07T07:49:44Z"
     name: jxboot-helmfile-resources
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.1.35
+    version: 1.1.37
   - apiVersion: v1
     appVersion: 1.7.5
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
