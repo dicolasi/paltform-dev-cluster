@@ -104,20 +104,20 @@
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
     version: 1.1.38
   - apiVersion: v1
-    appVersion: 1.7.5
+    appVersion: 1.8.0
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
       - and their logs.
-    firstDeployed: "2021-12-09T11:23:57Z"
+    firstDeployed: "2022-03-15T06:06:48Z"
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2021-12-09T11:23:57Z"
+    lastDeployed: "2022-03-15T06:06:48Z"
     name: jx-pipelines-visualizer
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer
     sources:
     - https://github.com/jenkins-x/jx-pipelines-visualizer
-    version: 1.7.5
+    version: 1.8.0
   - apiVersion: v1
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
     firstDeployed: "2022-03-08T05:27:47Z"
