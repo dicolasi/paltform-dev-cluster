@@ -28,6 +28,7 @@ data:
         property-xyz/dev_platform-cluster-azure: true
         property-xyz/platform-azure-demonset: true
         property-xyz/platform-frontend: true
+        property-xyz/platform-lambda-address-exporter: true
         property-xyz/platform-lambda-address-publisher: true
         property-xyz/platform-lambda-crm-integration: true
         property-xyz/platform-lambda-mail-service: true
@@ -69,6 +70,7 @@ data:
         property-xyz/dev_platform-cluster-azure: merge
         property-xyz/platform-azure-demonset: merge
         property-xyz/platform-frontend: merge
+        property-xyz/platform-lambda-address-exporter: merge
         property-xyz/platform-lambda-address-publisher: merge
         property-xyz/platform-lambda-crm-integration: merge
         property-xyz/platform-lambda-mail-service: merge
@@ -111,6 +113,7 @@ data:
         - property-xyz/data-yield-stats-service
         - property-xyz/platform-azure-demonset
         - property-xyz/platform-frontend
+        - property-xyz/platform-lambda-address-exporter
         - property-xyz/platform-lambda-address-publisher
         - property-xyz/platform-lambda-crm-integration
         - property-xyz/platform-lambda-mail-service
@@ -150,6 +153,7 @@ data:
         - property-xyz/data-yield-stats-service
         - property-xyz/platform-azure-demonset
         - property-xyz/platform-frontend
+        - property-xyz/platform-lambda-address-exporter
         - property-xyz/platform-lambda-address-publisher
         - property-xyz/platform-lambda-crm-integration
         - property-xyz/platform-lambda-mail-service
