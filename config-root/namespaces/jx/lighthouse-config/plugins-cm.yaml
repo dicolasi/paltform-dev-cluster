@@ -112,6 +112,9 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - property-xyz/platform-lambda-address-exporter
+    - lgtm_acts_as_approve: true
+      repos:
       - property-xyz/platform-postcodes-io-db
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -261,6 +264,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       property-xyz/platform-lambda-uk-address-processor:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/platform-lambda-address-exporter:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -696,6 +704,22 @@ data:
       - cat
       - dog
       - pony
+      property-xyz/platform-lambda-address-exporter:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       property-xyz/platform-postcodes-io-db:
       - approve
       - assign
@@ -865,6 +889,9 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/platform-lambda-uk-address-processor
+      trusted_org: todo
+    - repos:
+      - property-xyz/platform-lambda-address-exporter
       trusted_org: todo
     - repos:
       - property-xyz/platform-postcodes-io-db
