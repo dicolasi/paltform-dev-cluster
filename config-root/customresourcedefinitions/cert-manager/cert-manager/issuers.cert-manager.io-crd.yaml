@@ -11,7 +11,7 @@ metadata:
     app.kubernetes.io/name: 'cert-manager'
     app.kubernetes.io/instance: 'cert-manager'
     app.kubernetes.io/managed-by: 'Helm'
-    helm.sh/chart: 'cert-manager-v1.1.0'
+    helm.sh/chart: 'cert-manager-v1.2.0'
     gitops.jenkins-x.io/pipeline: 'customresourcedefinitions'
 spec:
   group: cert-manager.io
@@ -20,6 +20,8 @@ spec:
     listKind: IssuerList
     plural: issuers
     singular: issuer
+    categories:
+      - cert-manager
   scope: Namespaced
   conversion:
     # a Webhook strategy instruct API server to call an external webhook for any conversion between custom resources.
@@ -863,6 +865,11 @@ spec:
                       type: array
                       items:
                         type: string
+                    ocspServers:
+                      description: The OCSP server list is an X.509 v3 extension that defines a list of URLs of OCSP responders. The OCSP responders can be queried for the revocation status of an issued certificate. If not set, the certificate wil be issued with no OCSP servers set. For example, an OCSP server URL could be "http://ocsp.int-x3.letsencrypt.org".
+                      type: array
+                      items:
+                        type: string
                     secretName:
                       description: SecretName is the name of the secret used to sign Certificates issued by this Issuer.
                       type: string
@@ -1051,14 +1058,14 @@ spec:
                         description: Reason is a brief machine readable explanation for the condition's last transition.
                         type: string
                       status:
-                        description: Status of the condition, one of ('True', 'False', 'Unknown').
+                        description: Status of the condition, one of (`True`, `False`, `Unknown`).
                         type: string
                         enum:
                           - "True"
                           - "False"
                           - Unknown
                       type:
-                        description: Type of the condition, known values are ('Ready').
+                        description: Type of the condition, known values are (`Ready`).
                         type: string
       served: true
       storage: false
@@ -1892,6 +1899,11 @@ spec:
                       type: array
                       items:
                         type: string
+                    ocspServers:
+                      description: The OCSP server list is an X.509 v3 extension that defines a list of URLs of OCSP responders. The OCSP responders can be queried for the revocation status of an issued certificate. If not set, the certificate wil be issued with no OCSP servers set. For example, an OCSP server URL could be "http://ocsp.int-x3.letsencrypt.org".
+                      type: array
+                      items:
+                        type: string
                     secretName:
                       description: SecretName is the name of the secret used to sign Certificates issued by this Issuer.
                       type: string
@@ -2080,14 +2092,14 @@ spec:
                         description: Reason is a brief machine readable explanation for the condition's last transition.
                         type: string
                       status:
-                        description: Status of the condition, one of ('True', 'False', 'Unknown').
+                        description: Status of the condition, one of (`True`, `False`, `Unknown`).
                         type: string
                         enum:
                           - "True"
                           - "False"
                           - Unknown
                       type:
-                        description: Type of the condition, known values are ('Ready').
+                        description: Type of the condition, known values are (`Ready`).
                         type: string
       served: true
       storage: false
@@ -2923,6 +2935,11 @@ spec:
                       type: array
                       items:
                         type: string
+                    ocspServers:
+                      description: The OCSP server list is an X.509 v3 extension that defines a list of URLs of OCSP responders. The OCSP responders can be queried for the revocation status of an issued certificate. If not set, the certificate wil be issued with no OCSP servers set. For example, an OCSP server URL could be "http://ocsp.int-x3.letsencrypt.org".
+                      type: array
+                      items:
+                        type: string
                     secretName:
                       description: SecretName is the name of the secret used to sign Certificates issued by this Issuer.
                       type: string
@@ -3111,14 +3128,14 @@ spec:
                         description: Reason is a brief machine readable explanation for the condition's last transition.
                         type: string
                       status:
-                        description: Status of the condition, one of ('True', 'False', 'Unknown').
+                        description: Status of the condition, one of (`True`, `False`, `Unknown`).
                         type: string
                         enum:
                           - "True"
                           - "False"
                           - Unknown
                       type:
-                        description: Type of the condition, known values are ('Ready').
+                        description: Type of the condition, known values are (`Ready`).
                         type: string
       served: true
       storage: false
@@ -3954,6 +3971,11 @@ spec:
                       type: array
                       items:
                         type: string
+                    ocspServers:
+                      description: The OCSP server list is an X.509 v3 extension that defines a list of URLs of OCSP responders. The OCSP responders can be queried for the revocation status of an issued certificate. If not set, the certificate wil be issued with no OCSP servers set. For example, an OCSP server URL could be "http://ocsp.int-x3.letsencrypt.org".
+                      type: array
+                      items:
+                        type: string
                     secretName:
                       description: SecretName is the name of the secret used to sign Certificates issued by this Issuer.
                       type: string
@@ -4142,14 +4164,14 @@ spec:
                         description: Reason is a brief machine readable explanation for the condition's last transition.
                         type: string
                       status:
-                        description: Status of the condition, one of ('True', 'False', 'Unknown').
+                        description: Status of the condition, one of (`True`, `False`, `Unknown`).
                         type: string
                         enum:
                           - "True"
                           - "False"
                           - Unknown
                       type:
-                        description: Type of the condition, known values are ('Ready').
+                        description: Type of the condition, known values are (`Ready`).
                         type: string
       served: true
       storage: true
