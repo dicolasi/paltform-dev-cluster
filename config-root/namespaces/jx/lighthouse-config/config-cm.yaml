@@ -26,6 +26,7 @@ data:
         property-xyz/data-uk-national-statistics: true
         property-xyz/data-yield-stats-service: true
         property-xyz/dev_platform-cluster-azure: true
+        property-xyz/platform-address-details: true
         property-xyz/platform-azure-demonset: true
         property-xyz/platform-frontend: true
         property-xyz/platform-lambda-address-exporter: true
@@ -68,6 +69,7 @@ data:
         property-xyz/data-uk-national-statistics: merge
         property-xyz/data-yield-stats-service: merge
         property-xyz/dev_platform-cluster-azure: merge
+        property-xyz/platform-address-details: merge
         property-xyz/platform-azure-demonset: merge
         property-xyz/platform-frontend: merge
         property-xyz/platform-lambda-address-exporter: merge
@@ -111,6 +113,7 @@ data:
         - property-xyz/data-seed
         - property-xyz/data-uk-national-statistics
         - property-xyz/data-yield-stats-service
+        - property-xyz/platform-address-details
         - property-xyz/platform-azure-demonset
         - property-xyz/platform-frontend
         - property-xyz/platform-lambda-address-exporter
@@ -151,6 +154,7 @@ data:
         - property-xyz/data-seed
         - property-xyz/data-uk-national-statistics
         - property-xyz/data-yield-stats-service
+        - property-xyz/platform-address-details
         - property-xyz/platform-azure-demonset
         - property-xyz/platform-frontend
         - property-xyz/platform-lambda-address-exporter
