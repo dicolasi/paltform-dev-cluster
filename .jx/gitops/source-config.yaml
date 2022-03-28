@@ -26,6 +26,7 @@ spec:
     - name: data-seed
     - name: data-uk-national-statistics
     - name: data-yield-stats-service
+    - name: platform-address-details
     - name: platform-azure-demonset
     - name: platform-frontend
     - name: platform-lambda-address-exporter
