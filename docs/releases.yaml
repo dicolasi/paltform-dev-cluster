@@ -43,19 +43,19 @@
   path: helmfiles/jx/helmfile.yaml
   releases:
   - apiVersion: v1
-    appVersion: 0.0.65
+    appVersion: 0.0.66
     description: A Slack bot for Jenkins X
-    firstDeployed: "2022-02-23T03:28:15Z"
+    firstDeployed: "2022-04-04T02:22:18Z"
     home: https://github.com/jenkins-x-plugins/jx-slack
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-02-23T03:28:15Z"
+    lastDeployed: "2022-04-04T02:22:18Z"
     name: jx-slack
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-slack
     sources:
     - https://github.com/jenkins-x-plugins/jx-slack
-    version: 0.0.65
+    version: 0.0.66
   - name: ../charts/external-dns-resources
     repositoryName: ..
     version: 1.0.0
@@ -92,17 +92,17 @@
     - https://github.com/kubernetes-sigs/external-dns
     version: 6.0.2
   - apiVersion: v1
-    appVersion: 1.1.54
+    appVersion: 1.1.60
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2022-03-31T06:57:26Z"
+    firstDeployed: "2022-04-04T02:22:31Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-03-31T06:57:26Z"
+    lastDeployed: "2022-04-04T02:22:31Z"
     name: jxboot-helmfile-resources
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.1.54
+    version: 1.1.60
   - apiVersion: v1
     appVersion: 1.8.0
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
@@ -120,15 +120,15 @@
     version: 1.8.0
   - apiVersion: v1
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
-    firstDeployed: "2022-03-31T06:57:38Z"
+    firstDeployed: "2022-04-04T02:22:43Z"
     home: https://github.com/jenkins-x-plugins/jx-preview
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-03-31T06:57:38Z"
+    lastDeployed: "2022-04-04T02:22:43Z"
     name: jx-preview
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-preview
-    version: 0.0.197
+    version: 0.0.198
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
     firstDeployed: "2022-03-08T05:28:00Z"
@@ -153,12 +153,12 @@
     resourcePath: config-root/namespaces/jx/nexus
     version: 0.1.41
   - apiVersion: v2
-    appVersion: 0.3.13
+    appVersion: 0.3.15
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
-    firstDeployed: "2022-03-31T06:57:50Z"
+    firstDeployed: "2022-04-04T02:22:55Z"
     home: https://jenkins-x.io/
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-03-31T06:57:50Z"
+    lastDeployed: "2022-04-04T02:22:55Z"
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
@@ -168,7 +168,7 @@
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.3.13
+    version: 0.3.15
   - apiVersion: v1
     appVersion: 0.1.7
     description: Web UI for Lighthouse, to visualize events, jobs, and merge status/history.
