@@ -1,9 +1,8 @@
 # Source: cert-manager/templates/webhook-rbac.yaml
 apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: ClusterRole
 metadata:
-  name: cert-manager-webhook:dynamic-serving
-  namespace: "cert-manager"
+  name: cert-manager-webhook:subjectaccessreviews
   labels:
     app: webhook
     app.kubernetes.io/name: webhook
@@ -11,15 +10,10 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: "webhook"
     helm.sh/chart: cert-manager-v1.3.3
-    gitops.jenkins-x.io/pipeline: 'namespaces'
+    gitops.jenkins-x.io/pipeline: 'cluster'
   annotations:
     meta.helm.sh/release-name: 'cert-manager'
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: Role
-  name: cert-manager-webhook:dynamic-serving
-subjects:
-  - apiGroup: ""
-    kind: ServiceAccount
-    name: cert-manager-webhook
-    namespace: cert-manager
+rules:
+  - apiGroups: ["authorization.k8s.io"]
+    resources: ["subjectaccessreviews"]
+    verbs: ["create"]
