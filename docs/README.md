@@ -25,7 +25,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='https://github.com/jetstack/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
-	      <td>1.2.0</td>
+	      <td>1.3.3</td>
 	      <td></td>
 	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
 	    </tr>
@@ -58,7 +58,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
-	      <td>1.1.60</td>
+	      <td>1.1.64</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
