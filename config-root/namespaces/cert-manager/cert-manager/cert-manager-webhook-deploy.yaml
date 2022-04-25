@@ -8,9 +8,10 @@ metadata:
     app: webhook
     app.kubernetes.io/name: webhook
     app.kubernetes.io/instance: cert-manager
-    app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: "webhook"
-    helm.sh/chart: cert-manager-v1.4.4
+    app.kubernetes.io/version: "v1.5.5"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: cert-manager-v1.5.5
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'cert-manager'
@@ -28,16 +29,17 @@ spec:
         app: webhook
         app.kubernetes.io/name: webhook
         app.kubernetes.io/instance: cert-manager
-        app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/component: "webhook"
-        helm.sh/chart: cert-manager-v1.4.4
+        app.kubernetes.io/version: "v1.5.5"
+        app.kubernetes.io/managed-by: Helm
+        helm.sh/chart: cert-manager-v1.5.5
     spec:
       serviceAccountName: cert-manager-webhook
       securityContext:
         runAsNonRoot: true
       containers:
         - name: cert-manager
-          image: "quay.io/jetstack/cert-manager-webhook:v1.4.4"
+          image: "quay.io/jetstack/cert-manager-webhook:v1.5.5"
           imagePullPolicy: IfNotPresent
           args:
             - --v=2
@@ -47,6 +49,7 @@ spec:
             - --dynamic-serving-dns-names=cert-manager-webhook,cert-manager-webhook.cert-manager,cert-manager-webhook.cert-manager.svc
           ports:
             - name: https
+              protocol: TCP
               containerPort: 10250
           livenessProbe:
             httpGet:
