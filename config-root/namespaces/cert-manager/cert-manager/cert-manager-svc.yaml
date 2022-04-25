@@ -8,9 +8,10 @@ metadata:
     app: cert-manager
     app.kubernetes.io/name: cert-manager
     app.kubernetes.io/instance: cert-manager
-    app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/component: "controller"
-    helm.sh/chart: cert-manager-v1.4.4
+    app.kubernetes.io/version: "v1.5.5"
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: cert-manager-v1.5.5
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     meta.helm.sh/release-name: 'cert-manager'
@@ -19,6 +20,7 @@ spec:
   ports:
     - protocol: TCP
       port: 9402
+      name: tcp-prometheus-servicemonitor
       targetPort: 9402
   selector:
     app.kubernetes.io/name: cert-manager
