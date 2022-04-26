@@ -54,7 +54,7 @@ spec:
             - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
               value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
             - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
-              value: "8c0d2af5ca57a30591f66cc7fbac3646384ff07b"
+              value: "75cb6e37efd318c1edcf23ce4149d9b5ca2d0bec"
           envFrom:
             - secretRef:
                 name: jx-boot-job-env-vars
