@@ -27,7 +27,7 @@ spec:
           containers:
             - command:
                 - /home/jx/gc-jobs
-              image: ghcr.io/jenkins-x/lighthouse-gc-jobs:1.5.16
+              image: ghcr.io/jenkins-x/lighthouse-gc-jobs:1.5.17
               imagePullPolicy: IfNotPresent
               args:
                 - "--namespace=jx"
