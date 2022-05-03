@@ -58,7 +58,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
-	      <td>1.1.82</td>
+	      <td>1.1.93</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
@@ -70,7 +70,7 @@
 	    </tr>
     <tr>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
-	      <td>0.0.202</td>
+	      <td>0.0.204</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview'>source</a></td>
 	    </tr>
@@ -103,7 +103,7 @@
 		    </tr>
 	    <tr>
 	      <td><a href='https://github.com/kubernetes/ingress-nginx' title='Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer'> <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png' width='24px' height='24px'> ingress-nginx </a></td>
-	      <td>3.12.0</td>
+	      <td>4.1.0</td>
 	      <td></td>
 	      <td><a href='https://github.com/kubernetes/ingress-nginx'>source</a></td>
 	    </tr>
