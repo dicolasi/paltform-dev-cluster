@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: startupapicheck
     app.kubernetes.io/instance: cert-manager
     app.kubernetes.io/component: "startupapicheck"
-    app.kubernetes.io/version: "v1.6.3"
+    app.kubernetes.io/version: "v1.7.2"
     app.kubernetes.io/managed-by: Helm
-    helm.sh/chart: cert-manager-v1.6.3
+    helm.sh/chart: cert-manager-v1.7.2
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     helm.sh/hook: post-install
@@ -27,9 +27,9 @@ spec:
         app.kubernetes.io/name: startupapicheck
         app.kubernetes.io/instance: cert-manager
         app.kubernetes.io/component: "startupapicheck"
-        app.kubernetes.io/version: "v1.6.3"
+        app.kubernetes.io/version: "v1.7.2"
         app.kubernetes.io/managed-by: Helm
-        helm.sh/chart: cert-manager-v1.6.3
+        helm.sh/chart: cert-manager-v1.7.2
     spec:
       restartPolicy: OnFailure
       serviceAccountName: cert-manager-startupapicheck
@@ -37,10 +37,9 @@ spec:
         runAsNonRoot: true
       containers:
         - name: cert-manager
-          image: "quay.io/jetstack/cert-manager-ctl:v1.6.3"
+          image: "quay.io/jetstack/cert-manager-ctl:v1.7.2"
           imagePullPolicy: IfNotPresent
           args:
             - check
             - api
             - --wait=1m
-          resources: {}
