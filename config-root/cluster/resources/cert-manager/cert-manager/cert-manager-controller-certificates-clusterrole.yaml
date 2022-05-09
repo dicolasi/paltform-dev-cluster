@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: cert-manager
     app.kubernetes.io/instance: cert-manager
     app.kubernetes.io/component: "controller"
-    app.kubernetes.io/version: "v1.6.3"
+    app.kubernetes.io/version: "v1.7.2"
     app.kubernetes.io/managed-by: Helm
-    helm.sh/chart: cert-manager-v1.6.3
+    helm.sh/chart: cert-manager-v1.7.2
     gitops.jenkins-x.io/pipeline: 'cluster'
   annotations:
     meta.helm.sh/release-name: 'cert-manager'
@@ -33,7 +33,7 @@ rules:
     verbs: ["create", "delete", "get", "list", "watch"]
   - apiGroups: [""]
     resources: ["secrets"]
-    verbs: ["get", "list", "watch", "create", "update", "delete"]
+    verbs: ["get", "list", "watch", "create", "update", "delete", "patch"]
   - apiGroups: [""]
     resources: ["events"]
     verbs: ["create", "patch"]
