@@ -68,6 +68,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - property-xyz/data-os-map
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - property-xyz/data-outcode-stats-service
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -209,6 +213,11 @@ data:
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
       property-xyz/data-landregistry-sparql-client:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      property-xyz/data-os-map:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
@@ -506,6 +515,22 @@ data:
       - dog
       - pony
       property-xyz/data-landregistry-sparql-client:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      property-xyz/data-os-map:
       - approve
       - assign
       - blunderbuss
@@ -882,6 +907,9 @@ data:
       trusted_org: todo
     - repos:
       - property-xyz/data-landregistry-sparql-client
+      trusted_org: todo
+    - repos:
+      - property-xyz/data-os-map
       trusted_org: todo
     - repos:
       - property-xyz/data-outcode-stats-service
