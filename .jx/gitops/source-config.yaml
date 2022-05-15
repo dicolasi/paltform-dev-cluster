@@ -21,6 +21,7 @@ spec:
     - name: data-hmo-service
     - name: data-infinispan-cache
     - name: data-landregistry-sparql-client
+    - name: data-os-map
     - name: data-outcode-stats-service
     - name: data-rent-demand-service
     - name: data-seed
