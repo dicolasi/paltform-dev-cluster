@@ -20,6 +20,7 @@ data:
         property-xyz/data-hmo-service: true
         property-xyz/data-infinispan-cache: true
         property-xyz/data-landregistry-sparql-client: true
+        property-xyz/data-os-map: true
         property-xyz/data-outcode-stats-service: true
         property-xyz/data-rent-demand-service: true
         property-xyz/data-seed: true
@@ -63,6 +64,7 @@ data:
         property-xyz/data-hmo-service: merge
         property-xyz/data-infinispan-cache: merge
         property-xyz/data-landregistry-sparql-client: merge
+        property-xyz/data-os-map: merge
         property-xyz/data-outcode-stats-service: merge
         property-xyz/data-rent-demand-service: merge
         property-xyz/data-seed: merge
@@ -108,6 +110,7 @@ data:
         - property-xyz/data-hmo-service
         - property-xyz/data-infinispan-cache
         - property-xyz/data-landregistry-sparql-client
+        - property-xyz/data-os-map
         - property-xyz/data-outcode-stats-service
         - property-xyz/data-rent-demand-service
         - property-xyz/data-seed
@@ -149,6 +152,7 @@ data:
         - property-xyz/data-hmo-service
         - property-xyz/data-infinispan-cache
         - property-xyz/data-landregistry-sparql-client
+        - property-xyz/data-os-map
         - property-xyz/data-outcode-stats-service
         - property-xyz/data-rent-demand-service
         - property-xyz/data-seed
