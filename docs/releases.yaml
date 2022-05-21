@@ -8,6 +8,7 @@
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     lastDeployed: "2022-01-23T11:04:21Z"
     name: platform-azure-demonset
+    releaseName: platform-azure-demonset
     repositoryName: dev
     repositoryUrl: https://property-xyz.github.io/platform-helm-charts
     resourcePath: config-root/namespaces/kube-system/platform-azure-demonset
@@ -33,6 +34,7 @@
     - email: cert-manager-maintainers@googlegroups.com
       name: cert-manager-maintainers
     name: cert-manager
+    releaseName: cert-manager
     repositoryName: jetstack
     repositoryUrl: https://charts.jetstack.io
     resourcePath: config-root/namespaces/cert-manager/cert-manager
@@ -40,6 +42,7 @@
     - https://github.com/jetstack/cert-manager
     version: 1.7.2
   - name: ../charts/cert-manager-resources
+    releaseName: cert-manager-resources
     repositoryName: ..
 - namespace: jx
   path: helmfiles/jx/helmfile.yaml
@@ -52,6 +55,7 @@
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     lastDeployed: "2022-05-09T15:28:11Z"
     name: jx-slack
+    releaseName: jx-slack
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-slack
@@ -59,6 +63,7 @@
     - https://github.com/jenkins-x-plugins/jx-slack
     version: 0.1.1
   - name: ../charts/external-dns-resources
+    releaseName: external-dns-resources
     repositoryName: ..
     version: 1.0.0
   - annotations:
@@ -85,6 +90,7 @@
     - email: containers@bitnami.com
       name: Bitnami
     name: external-dns
+    releaseName: external-dns
     repositoryName: bitnami
     repositoryUrl: https://charts.bitnami.com/bitnami
     resourcePath: config-root/namespaces/jx/external-dns
@@ -94,32 +100,34 @@
     - https://github.com/kubernetes-sigs/external-dns
     version: 6.0.2
   - apiVersion: v1
-    appVersion: 1.1.110
+    appVersion: 1.1.111
     description: A Helm chart for the resources for JX Boot
-    firstDeployed: "2022-05-14T00:03:03Z"
+    firstDeployed: "2022-05-21T00:03:17Z"
     home: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-05-14T00:03:03Z"
+    lastDeployed: "2022-05-21T00:03:17Z"
     name: jxboot-helmfile-resources
+    releaseName: jxboot-helmfile-resources
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jxboot-helmfile-resources
-    version: 1.1.110
+    version: 1.1.111
   - apiVersion: v1
-    appVersion: 1.8.1
+    appVersion: 1.8.2
     description: Web UI for Jenkins X, with a clear goal - visualize the pipelines
       - and their logs.
-    firstDeployed: "2022-05-14T00:03:19Z"
+    firstDeployed: "2022-05-21T00:03:29Z"
     home: https://github.com/jenkins-x/jx-pipelines-visualizer
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-05-14T00:03:19Z"
+    lastDeployed: "2022-05-21T00:03:29Z"
     name: jx-pipelines-visualizer
+    releaseName: jx-pipelines-visualizer
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-pipelines-visualizer
     sources:
     - https://github.com/jenkins-x/jx-pipelines-visualizer
-    version: 1.8.1
+    version: 1.8.2
   - apiVersion: v1
     description: 'This chart installs the jx-preview CRD and garbagecollection job '
     firstDeployed: "2022-05-09T15:28:40Z"
@@ -127,21 +135,23 @@
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     lastDeployed: "2022-05-09T15:28:40Z"
     name: jx-preview
+    releaseName: jx-preview
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-preview
     version: 0.0.206
   - apiVersion: v1
     description: 'This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '
-    firstDeployed: "2022-05-09T15:28:54Z"
+    firstDeployed: "2022-05-21T00:03:42Z"
     home: https://github.com/jenkins-x/lighthouse
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-05-09T15:28:54Z"
+    lastDeployed: "2022-05-21T00:03:42Z"
     name: lighthouse
+    releaseName: lighthouse
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/lighthouse
-    version: 1.6.1
+    version: 1.6.4
   - apiVersion: v1
     appVersion: 0.1.41
     description: A Helm chart for Kubernetes
@@ -150,6 +160,7 @@
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/jenkins-x-platform/images/nexus.png
     lastDeployed: "2022-01-10T11:39:52Z"
     name: nexus
+    releaseName: nexus
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/nexus
@@ -165,6 +176,7 @@
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
     name: jx-build-controller
+    releaseName: jx-build-controller
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/jx-build-controller
@@ -179,6 +191,7 @@
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
     lastDeployed: "2021-12-09T12:05:27Z"
     name: lighthouse-webui-plugin
+    releaseName: lighthouse-webui-plugin
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/jx/lighthouse-webui-plugin
@@ -221,6 +234,7 @@
     - name: strongjz
     - name: tao12345666333
     name: ingress-nginx
+    releaseName: nginx-ingress
     repositoryName: ingress-nginx
     repositoryUrl: https://kubernetes.github.io/ingress-nginx
     resourcePath: config-root/namespaces/nginx/ingress-nginx-nginx-ingress
@@ -244,6 +258,7 @@
     - name: external-secrets
       url: https://github.com/external-secrets
     name: kubernetes-external-secrets
+    releaseName: kubernetes-external-secrets
     repositoryName: external-secrets
     repositoryUrl: https://external-secrets.github.io/kubernetes-external-secrets
     resourcePath: config-root/namespaces/secret-infra/kubernetes-external-secrets
@@ -260,6 +275,7 @@
     - kubernetes
     lastDeployed: "2021-12-09T11:24:55Z"
     name: pusher-wave
+    releaseName: pusher-wave
     repositoryName: jxgh
     repositoryUrl: https://jenkins-x-charts.github.io/repo
     resourcePath: config-root/namespaces/secret-infra/pusher-wave
@@ -277,6 +293,7 @@
     icon: https://avatars2.githubusercontent.com/u/47602533
     lastDeployed: "2022-04-28T00:03:10Z"
     name: tekton-pipeline
+    releaseName: tekton-pipeline
     repositoryName: cdf
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
@@ -297,6 +314,7 @@
     - API
     lastDeployed: "2021-12-23T05:44:03Z"
     name: platform-postcodes-io-db
+    releaseName: platform-postcodes-io-db
     repositoryName: dev
     repositoryUrl: https://property-xyz.github.io/platform-helm-charts
     resourcePath: config-root/namespaces/jx-dev/platform-postcodes-io-db
