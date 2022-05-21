@@ -5,6 +5,7 @@
   <thead>
     <tr>
       <th scope="col">Release</th>
+      <th scope="col">Chart</th>
       <th scope="col">Version</th>
       <th scope="col">Open</th>
       <th scope="col">Source</th>
@@ -12,129 +13,147 @@
   </thead>
   <tbody>
     <tr>
-		      <td colspan='4'><h3>kube-system</h3></td>
+		      <td colspan='5'><h3>kube-system</h3></td>
 		    </tr>
 	    <tr>
+	      <td>platform-azure-demonset</td>
 	      <td><a href='' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png' width='24px' height='24px'> platform-azure-demonset </a></td>
 	      <td>0.0.2</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>cert-manager</h3></td>
+		      <td colspan='5'><h3>cert-manager</h3></td>
 		    </tr>
 	    <tr>
+	      <td>cert-manager</td>
 	      <td><a href='https://github.com/jetstack/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
 	      <td>1.7.2</td>
 	      <td></td>
 	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
 	    </tr>
     <tr>
+	      <td>cert-manager-resources</td>
 	      <td><a href='' title=''> <img src='' width='24px' height='24px'> ../charts/cert-manager-resources </a></td>
 	      <td></td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>jx</h3></td>
+		      <td colspan='5'><h3>jx</h3></td>
 		    </tr>
 	    <tr>
+	      <td>jx-slack</td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack' title='A Slack bot for Jenkins X'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-slack </a></td>
 	      <td>0.1.1</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-slack'>source</a></td>
 	    </tr>
     <tr>
+	      <td>external-dns-resources</td>
 	      <td><a href='' title=''> <img src='' width='24px' height='24px'> ../charts/external-dns-resources </a></td>
 	      <td>1.0.0</td>
 	      <td></td>
 	      <td></td>
 	    </tr>
     <tr>
+	      <td>external-dns</td>
 	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns' title='ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.'> <img src='https://bitnami.com/assets/stacks/external-dns/img/external-dns-stack-220x234.png' width='24px' height='24px'> external-dns </a></td>
 	      <td>6.0.2</td>
 	      <td></td>
 	      <td><a href='https://github.com/bitnami/charts/tree/master/bitnami/external-dns'>source</a></td>
 	    </tr>
     <tr>
+	      <td>jxboot-helmfile-resources</td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
-	      <td>1.1.110</td>
+	      <td>1.1.111</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
     <tr>
+	      <td>jx-pipelines-visualizer</td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer' title='Web UI for Jenkins X, with a clear goal - visualize the pipelines - and their logs.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-pipelines-visualizer </a></td>
-	      <td>1.8.1</td>
+	      <td>1.8.2</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/jx-pipelines-visualizer'>source</a></td>
 	    </tr>
     <tr>
+	      <td>jx-preview</td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
 	      <td>0.0.206</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview'>source</a></td>
 	    </tr>
     <tr>
+	      <td>lighthouse</td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>1.6.1</td>
+	      <td>1.6.4</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
     <tr>
+	      <td>nexus</td>
 	      <td><a href='https://github.com/jenkins-x-charts/nexus' title='A Helm chart for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/jenkins-x-platform/images/nexus.png' width='24px' height='24px'> nexus </a></td>
 	      <td>0.1.41</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/nexus'>source</a></td>
 	    </tr>
     <tr>
+	      <td>jx-build-controller</td>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
 	      <td>0.3.20</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>
     <tr>
+	      <td>lighthouse-webui-plugin</td>
 	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin' title='Web UI for Lighthouse, to visualize events, jobs, and merge status/history.'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse-webui-plugin </a></td>
 	      <td>0.1.7</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/lighthouse-webui-plugin'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>nginx</h3></td>
+		      <td colspan='5'><h3>nginx</h3></td>
 		    </tr>
 	    <tr>
+	      <td>nginx-ingress</td>
 	      <td><a href='https://github.com/kubernetes/ingress-nginx' title='Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer'> <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png' width='24px' height='24px'> ingress-nginx </a></td>
 	      <td>4.1.0</td>
 	      <td></td>
 	      <td><a href='https://github.com/kubernetes/ingress-nginx'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>secret-infra</h3></td>
+		      <td colspan='5'><h3>secret-infra</h3></td>
 		    </tr>
 	    <tr>
+	      <td>kubernetes-external-secrets</td>
 	      <td><a href='https://github.com/external-secrets/kubernetes-external-secrets' title='Kubernetes External Secrets CustomResourceDefinition'> <img src='' width='24px' height='24px'> kubernetes-external-secrets </a></td>
 	      <td>8.3.0</td>
 	      <td></td>
 	      <td><a href='https://github.com/external-secrets/kubernetes-external-secrets'>source</a></td>
 	    </tr>
     <tr>
+	      <td>pusher-wave</td>
 	      <td><a href='https://github.com/pusher/wave' title='wave chart that runs on kubernetes'> <img src='' width='24px' height='24px'> pusher-wave </a></td>
 	      <td>0.4.21</td>
 	      <td></td>
 	      <td><a href='https://github.com/pusher/wave'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>tekton-pipelines</h3></td>
+		      <td colspan='5'><h3>tekton-pipelines</h3></td>
 		    </tr>
 	    <tr>
+	      <td>tekton-pipeline</td>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart' title='A Helm chart for Tekton Pipelines'> <img src='https://avatars2.githubusercontent.com/u/47602533' width='24px' height='24px'> tekton-pipeline </a></td>
 	      <td>0.29.0</td>
 	      <td></td>
 	      <td><a href='https://github.com/cdfoundation/tekton-helm-chart'>source</a></td>
 	    </tr>
     <tr>
-		      <td colspan='4'><h3>jx-dev</h3></td>
+		      <td colspan='5'><h3>jx-dev</h3></td>
 		    </tr>
 	    <tr>
+	      <td>platform-postcodes-io-db</td>
 	      <td><a href='https://postcodes.io' title='UK Postcode API serving up Open Data'> <img src='' width='24px' height='24px'> platform-postcodes-io-db </a></td>
 	      <td>0.1.3</td>
 	      <td></td>
