@@ -87,7 +87,7 @@
     <tr>
 	      <td>lighthouse</td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse' title='This chart bootstraps installation of [Lighthouse](https://github.com/jenkins-x/lighthouse). '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> lighthouse </a></td>
-	      <td>1.6.4</td>
+	      <td>1.6.5</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x/lighthouse'>source</a></td>
 	    </tr>
