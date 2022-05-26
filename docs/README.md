@@ -27,10 +27,10 @@
 		    </tr>
 	    <tr>
 	      <td>cert-manager</td>
-	      <td><a href='https://github.com/jetstack/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
-	      <td>1.7.2</td>
+	      <td><a href='https://github.com/cert-manager/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
+	      <td>v1.8.0</td>
 	      <td></td>
-	      <td><a href='https://github.com/jetstack/cert-manager'>source</a></td>
+	      <td><a href='https://github.com/cert-manager/cert-manager'>source</a></td>
 	    </tr>
     <tr>
 	      <td>cert-manager-resources</td>
@@ -101,7 +101,7 @@
     <tr>
 	      <td>jx-build-controller</td>
 	      <td><a href='https://jenkins-x.io/' title='Jenkins X next gen cloud CI / CD platform for Kubernetes'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-build-controller </a></td>
-	      <td>0.3.20</td>
+	      <td>0.3.21</td>
 	      <td></td>
 	      <td><a href='https://jenkins-x.io/'>source</a></td>
 	    </tr>
@@ -127,8 +127,8 @@
 		    </tr>
 	    <tr>
 	      <td>kubernetes-external-secrets</td>
-	      <td><a href='https://github.com/external-secrets/kubernetes-external-secrets' title='Kubernetes External Secrets CustomResourceDefinition'> <img src='' width='24px' height='24px'> kubernetes-external-secrets </a></td>
-	      <td>8.3.0</td>
+	      <td><a href='https://github.com/external-secrets/kubernetes-external-secrets' title='Deprecated: Kubernetes External Secrets CustomResourceDefinition'> <img src='' width='24px' height='24px'> kubernetes-external-secrets </a></td>
+	      <td>8.5.5</td>
 	      <td></td>
 	      <td><a href='https://github.com/external-secrets/kubernetes-external-secrets'>source</a></td>
 	    </tr>
