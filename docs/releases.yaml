@@ -18,18 +18,21 @@
   releases:
   - annotations:
       artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v1
-    appVersion: v1.7.2
+    appVersion: v1.8.0
     description: A Helm chart for cert-manager
-    firstDeployed: "2022-05-09T15:26:47Z"
-    home: https://github.com/jetstack/cert-manager
+    firstDeployed: "2022-05-26T05:57:07Z"
+    home: https://github.com/cert-manager/cert-manager
     icon: https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png
     keywords:
     - cert-manager
     - kube-lego
     - letsencrypt
     - tls
-    lastDeployed: "2022-05-09T15:26:47Z"
+    lastDeployed: "2022-05-26T05:57:07Z"
     maintainers:
     - email: cert-manager-maintainers@googlegroups.com
       name: cert-manager-maintainers
@@ -39,8 +42,8 @@
     repositoryUrl: https://charts.jetstack.io
     resourcePath: config-root/namespaces/cert-manager/cert-manager
     sources:
-    - https://github.com/jetstack/cert-manager
-    version: 1.7.2
+    - https://github.com/cert-manager/cert-manager
+    version: v1.8.0
   - name: ../charts/cert-manager-resources
     releaseName: cert-manager-resources
     repositoryName: ..
@@ -166,12 +169,12 @@
     resourcePath: config-root/namespaces/jx/nexus
     version: 0.1.41
   - apiVersion: v2
-    appVersion: 0.3.20
+    appVersion: 0.3.21
     description: Jenkins X next gen cloud CI / CD platform for Kubernetes
-    firstDeployed: "2022-05-09T15:29:09Z"
+    firstDeployed: "2022-05-26T05:57:33Z"
     home: https://jenkins-x.io/
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg
-    lastDeployed: "2022-05-09T15:29:09Z"
+    lastDeployed: "2022-05-26T05:57:33Z"
     maintainers:
     - email: jenkins-x@googlegroups.com
       name: Jenkins X Team
@@ -182,7 +185,7 @@
     resourcePath: config-root/namespaces/jx/jx-build-controller
     sources:
     - https://github.com/jenkins-x-plugins/jx-build-controller
-    version: 0.3.20
+    version: 0.3.21
   - apiVersion: v1
     appVersion: 0.1.7
     description: Web UI for Lighthouse, to visualize events, jobs, and merge status/history.
@@ -246,14 +249,15 @@
   path: helmfiles/secret-infra/helmfile.yaml
   releases:
   - apiVersion: v2
-    appVersion: 8.3.0
-    description: Kubernetes External Secrets CustomResourceDefinition
-    firstDeployed: "2021-12-09T11:24:51Z"
+    appVersion: 8.5.5
+    deprecated: true
+    description: 'Deprecated: Kubernetes External Secrets CustomResourceDefinition'
+    firstDeployed: "2022-05-26T05:57:59Z"
     home: https://github.com/external-secrets/kubernetes-external-secrets
     keywords:
     - kubernetes-external-secrets
     - secrets
-    lastDeployed: "2021-12-09T11:24:51Z"
+    lastDeployed: "2022-05-26T05:57:59Z"
     maintainers:
     - name: external-secrets
       url: https://github.com/external-secrets
@@ -264,7 +268,7 @@
     resourcePath: config-root/namespaces/secret-infra/kubernetes-external-secrets
     sources:
     - https://github.com/external-secrets/kubernetes-external-secrets
-    version: 8.3.0
+    version: 8.5.5
   - apiVersion: v1
     appVersion: 0.4.21
     description: wave chart that runs on kubernetes
