@@ -20,6 +20,7 @@ spec:
         metadata:
           labels:
             app: jenkins-x-updatebot
+          annotations:
         spec:
           initContainers:
             - command:
