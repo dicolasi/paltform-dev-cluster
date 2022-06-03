@@ -21,6 +21,7 @@ spec:
           labels:
             app: gcactivities
             release: jxboot-helmfile-resources
+          annotations:
         spec:
           restartPolicy: Never
           serviceAccountName: jx-gcactivities
