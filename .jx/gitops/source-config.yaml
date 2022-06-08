@@ -26,6 +26,7 @@ spec:
     - name: data-rent-demand-service
     - name: data-seed
     - name: data-uk-national-statistics
+    - name: data-uprn-service
     - name: data-yield-stats-service
     - name: platform-address-details
     - name: platform-azure-demonset
