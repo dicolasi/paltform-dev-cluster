@@ -25,7 +25,6 @@ data:
         property-xyz/data-rent-demand-service: true
         property-xyz/data-seed: true
         property-xyz/data-uk-national-statistics: true
-        property-xyz/data-uprn-service: true
         property-xyz/data-yield-stats-service: true
         property-xyz/dev_platform-cluster-azure: true
         property-xyz/platform-address-details: true
@@ -70,7 +69,6 @@ data:
         property-xyz/data-rent-demand-service: merge
         property-xyz/data-seed: merge
         property-xyz/data-uk-national-statistics: merge
-        property-xyz/data-uprn-service: merge
         property-xyz/data-yield-stats-service: merge
         property-xyz/dev_platform-cluster-azure: merge
         property-xyz/platform-address-details: merge
@@ -117,7 +115,6 @@ data:
         - property-xyz/data-rent-demand-service
         - property-xyz/data-seed
         - property-xyz/data-uk-national-statistics
-        - property-xyz/data-uprn-service
         - property-xyz/data-yield-stats-service
         - property-xyz/platform-address-details
         - property-xyz/platform-azure-demonset
@@ -160,7 +157,6 @@ data:
         - property-xyz/data-rent-demand-service
         - property-xyz/data-seed
         - property-xyz/data-uk-national-statistics
-        - property-xyz/data-uprn-service
         - property-xyz/data-yield-stats-service
         - property-xyz/platform-address-details
         - property-xyz/platform-azure-demonset
