@@ -27,8 +27,8 @@
 		    </tr>
 	    <tr>
 	      <td>cert-manager</td>
-	      <td><a href='https://github.com/cert-manager/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/jetstack/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
-	      <td>v1.8.0</td>
+	      <td><a href='https://github.com/cert-manager/cert-manager' title='A Helm chart for cert-manager'> <img src='https://raw.githubusercontent.com/cert-manager/cert-manager/master/logo/logo.png' width='24px' height='24px'> cert-manager </a></td>
+	      <td>v1.8.1</td>
 	      <td></td>
 	      <td><a href='https://github.com/cert-manager/cert-manager'>source</a></td>
 	    </tr>
@@ -66,7 +66,7 @@
     <tr>
 	      <td>jxboot-helmfile-resources</td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources' title='A Helm chart for the resources for JX Boot'> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jxboot-helmfile-resources </a></td>
-	      <td>1.1.118</td>
+	      <td>1.1.121</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-charts/jxboot-helmfile-resources'>source</a></td>
 	    </tr>
@@ -80,7 +80,7 @@
     <tr>
 	      <td>jx-preview</td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview' title='This chart installs the jx-preview CRD and garbagecollection job '> <img src='https://raw.githubusercontent.com/jenkins-x/jenkins-x-website/master/images/logo/jenkinsx-icon-color.svg' width='24px' height='24px'> jx-preview </a></td>
-	      <td>0.0.206</td>
+	      <td>0.0.207</td>
 	      <td></td>
 	      <td><a href='https://github.com/jenkins-x-plugins/jx-preview'>source</a></td>
 	    </tr>
